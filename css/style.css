@@ -1,0 +1,478 @@
+body 
+{	
+	display: flex;
+	height: auto;
+	max-width: 100%;
+	background-repeat:no-repeat;
+	font-family:"Arial";
+	font-size: 18px;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+     user-select: none; 
+     /*overflow:hidden;*/
+
+    height: 100% !important;
+
+    margin: 0;
+}
+
+html
+{
+	height: 100% !important;
+}
+
+#load
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:200px;
+	
+}
+
+@font-face {
+    font-family: "brant";
+    src: url("../assets/fonts/brant.ttf") format("truetype");
+}
+
+#eventList::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+#eventList::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(100, 100, 100, .4);
+}
+
+ #container
+{ 
+	position: relative;
+	width: 100%;
+	height: auto;
+/*	max-width: 800px;
+	max-height: 600px;*/
+	min-height: 100% !important;
+	/*min-height: 600px;*/
+	overflow:auto;
+	-webkit-transform:scale(1);
+	-webkit-transform-origin : left top;
+	-moz-transform :scale(1);
+	-moz-transform-origin : left top;
+	-ms-transform :scale(1);
+	-ms-transform-origin : left top;
+	-o-transform :scale(1);
+	-o-transform-origin : left top;
+	transform :scale(1);
+	transform-origin : left top;
+	float: left;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+
+	font-family: "Times New Roman";
+}
+
+#mainDiv
+{
+/*	display: flex;*/
+	flex-direction: column;
+	position: relative;
+	min-height: 100% !important;
+	height: auto;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: clip;
+}
+
+#mainTopBar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	z-index: 1;
+	display: flex;
+	margin-right: 5px;
+	justify-content: space-between;
+}
+
+#logoNname
+{
+	position: relative;
+	height: 55px;
+	width: 315px;
+	background: yellow;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: url("../assets/logo2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+}
+
+#MenuArea
+{
+	position: absolute;
+	min-height: max-content;
+	width: -webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+	min-width: 60px;
+	margin-right: 1%;
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+
+.highlight
+{
+	background: url("../assets/menuButtonB.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.normal
+{
+	background: url("../assets/menuButtonW.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.menuOptions
+{
+	display: none;
+	position: relative;
+	height: 80%;
+	width: 100%;
+	min-width: max-content;
+	align-content: center;
+	color: white;
+	justify-content: space-around;
+	line-height: 40px;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+.menuOptions:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.4);
+	color: black;
+}
+
+
+#menuOptionsButton	/* For screen widths smaller than 1050px */
+{
+	margin: 5px;
+	margin-top: 10px;
+	height: 40px;
+	width: 40px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+}
+
+
+.mainScreens
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+#screen_1
+{
+	background: url("../assets/renaissance.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+
+.screen_1_subParts
+{
+	position: relative;
+	height: 100%;
+}
+
+#screen_1_1
+{
+/*	background:blue;*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 55px;
+}
+
+#screen_1_1_Text
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height:	max-content;
+	width: 90%;
+	justify-content: space-around;
+}
+
+.TitleText
+{
+	color: white;
+}
+
+#Text1
+{
+	font-size: 35px;
+}
+
+#Text2
+{
+	font-size: 15px;
+}
+
+#Text3
+{
+	font-size: 15px;
+	margin-top: 50px;
+}
+
+#screen_1_2
+{
+/*	background:red;*/
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#eventsMainDiv
+{
+	position: relative;
+	height: 350px;
+	width: 350px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	margin-top: 55px;
+	
+	background: url("../assets/frame.png");
+	background-color: rgba(0,0,0,0.5);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#eventsMainDivHeading
+{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	font-size: 25px;
+	display: flex;
+	padding: auto;
+	justify-content: center;
+/*	color: #7a6900;*/
+	color: darkgoldenrod;
+	align-items: center;
+	margin-top: 10px;
+
+	font-family: brant;
+}
+
+#eventList
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	max-height: 85%;
+	width: 100%;
+/*	flex-wrap: wrap;*/
+	overflow-y: scroll;
+/*	justify-content: center;*/
+	align-items: center;
+
+	cursor: all-scroll;
+	overflow: scroll;
+}
+
+.events
+{
+	position: relative;
+	height: auto;
+	margin-top: 37px;
+	width: 80%;
+	color: #e0d9c1;
+	font-size: 19px;
+
+	font-family: brant;
+}
+
+
+#screen_2
+{
+	position: relative;
+	background: url("../assets/Piano.png");	
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 19px;
+	height: auto;
+}
+
+.screen_2_headings
+{
+	position: relative;
+	height: 80px;
+	width: auto;
+	display: flex;
+	vertical-align: middle;
+	justify-content: center;
+}
+
+#screen_2_heading2Div
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 300px;
+}
+
+.screen_2_contentDivs
+{
+	height: 180px;
+	font-size: 16px;
+	padding: 0 5px 0 5px;
+}
+
+.screen_2_sub
+{
+	position: relative;
+	color: darkgoldenrod;	
+}
+
+#screen_2_heading2
+{
+	font-size: 30px;
+	padding-top: 200px;
+}
+
+#screen_2_content2Div
+{
+	font-size: 17px;
+	padding: 30px 5px 5px 5px;
+}
+
+
+@media screen and (min-width: 450px) {
+
+	#eventsMainDiv
+	{
+		height: 450px;
+		width: 450px;
+	}
+
+}
+
+@media screen and (min-width: 650px) {
+
+	#eventsMainDiv
+	{
+		height: 550px;
+		width: 550px;
+	}
+	.screen_2_contentDivs
+	{
+		font-size: 19px;
+	}
+
+}
+
+
+@media screen and (min-width: 1050px) {
+	
+	#menuOptionsButton
+	{
+		display: none;
+	}
+	.menuOptions
+	{
+		display: flex;
+		width: max-content;
+		font-size: 20px;
+		padding: 4px;
+	}
+	#MenuArea
+	{
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+
+		height: 100%;
+		width: -webkit-calc(100% - 315px);
+		width: calc(100% - 315px);
+	}
+	#screen_1
+	{
+		flex-direction: row;
+	}
+	#screen_1_1
+	{
+		width: 47%;
+	}
+	#screen_1_2
+	{
+		width: 53%;
+	}
+	.screen_2_contentDivs
+	{
+		font-size: 19px;
+	}
+	#Text1
+	{
+		font-size: 50px;
+	}
+
+	#Text2
+	{
+		font-size: 20px;
+	}
+
+	#Text3
+	{
+		font-size: 20px;
+		margin-top: 50px;
+	}
+	.screen_2_contentDivs
+	{
+		font-size: 19px;
+	}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+	#eventsMainDiv
+	{
+		height: 650px;
+		width: 650px;
+	}
+
+}

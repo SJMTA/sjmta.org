@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>sjmta</title>	
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="data:;base64,iVBORwOKGO=" />
+	<script src="libs/jquery-1.7.1.min.js"></script>
+	<script src="libs/jquery_ui.js"></script>
+	<script src="libs/common.js"></script>
+	<script src="libs/loadxmldoc.js"></script>
+	<!-- <script src="../../../../libs/mathquill/mathquill.js"></script> -->
+
+	<script src="libs/script.js"></script>
+	<script src="libs/PxLoader.js"></script>
+    <script  src="libs/PxLoaderImage.js"></script>
+	
+<script>
+		var getParameters = getURLParameters();	
+		$(function()
+		{
+			// $("#container").hide();
+
+			//Load XML
+			var gameXMLFile = "xml/en_in.xml";
+			interactiveObj = new questionInteractive();
+			interactiveObj.init();
+			// loadXMLNEW(gameXMLFile, function ()
+        	// {
+        	// 	interactiveObj = new questionInteractive();
+        	// 	// var imageArray = [];
+        	// 	imageArray.push(""); //Write Image Name here
+
+        	// 	if(imageArray.length > 0)
+        	// 	{
+        	// 		var loader = new PxLoader();
+        	// 		$.each(imageArray,function(key,value)
+			// 		{
+        	// 			var pxImage = new PxLoaderImage('assets/'+value); 
+        	// 			loader.add(pxImage); 
+			// 		});	
+
+			// 		loader.addCompletionListener(function() {
+			// 			$("#container").show();
+			// 			$("#load").hide();
+			// 			interactiveObj.init();
+			// 		}); 
+			// 		loader.start();
+        	// 	}
+        	// 	else
+        	// 	{
+        	// 		$("#container").show();
+			// 		$("#load").hide();
+			// 		interactiveObj.init();
+        	// 	}
+        	// });
+		});
+	</script>  
+ 
+</head>
+<body>
+<div id="load"></div>
+<div id="container">
+	<div id="mainDiv"></div>
+</div>
+</body>
+</html>	
