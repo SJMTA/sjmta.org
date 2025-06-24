@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Ei Mindspark</title>	
+	<link href="../css/style_iframe.css" rel="stylesheet" type="text/css" />
+	<script src="../libs/jquery-1.7.1.min.js"></script>
+	<script src="../libs/jquery_ui.js"></script>
+	<script src="../libs/common.js"></script>
+	<script src="../libs/loadxmldoc.js"></script>
+	<!-- <script src="../../../../libs/mathquill/mathquill.js"></script> -->
+
+	<script src="../libs/script_iframe.js"></script>
+	<script src="../libs/script.js"></script>
+	<script src="../libs/PxLoader.js"></script>
+    <script  src="../libs/PxLoaderImage.js"></script>
+	
+<script>
+		var getParameters = getURLParameters();	
+		$(function()
+		{
+			$("#container").hide();
+
+			//Load XML
+			var gameXMLFile = "../xml/en_in.xml";
+			loadXMLNEW(gameXMLFile, function ()
+        	{
+        		interactiveObj1 = new questionInteractive_iframe();
+        		var imageArray = [];
+        		imageArray.push(""); //Write Image Name here
+
+        		if(imageArray.length > 0)
+        		{
+        			var loader = new PxLoader();
+        			$.each(imageArray,function(key,value)
+					{
+        				var pxImage = new PxLoaderImage('../assets/'+value); 
+        				loader.add(pxImage); 
+					});	
+
+					loader.addCompletionListener(function() {
+						$("#container").show();
+						$("#load").hide();
+						interactiveObj1.init();
+					}); 
+					loader.start();
+        		}
+        		else
+        		{
+        			$("#container").show();
+					$("#load").hide();
+					interactiveObj1.init();
+        		}
+        	});
+		});
+	</script>  
+ 
+</head>
+<body>
+<div id="load"></div>
+<div id="container1">
+</div>
+</body>
+</html>	

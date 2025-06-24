@@ -1,0 +1,404 @@
+body 
+{	
+	background-repeat:no-repeat;
+	font-family:"Arial";
+	font-size: 18px;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+     user-select: none; 
+     /*overflow:hidden;*/
+
+    height: 100% !important;
+}
+
+html
+{
+	height: 100% !important;
+}
+
+#load
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:200px;
+	/*background: url('../../../../assets/loader1.gif') no-repeat 0px 0px;*/
+	
+}
+
+ #container
+{ 
+	position: relative;
+	width: 100%;
+	height: auto;
+/*	max-width: 800px;
+	max-height: 600px;*/
+	min-height: 100% !important;
+	/*min-height: 600px;*/
+	overflow:auto;
+	-webkit-transform:scale(1);
+	-webkit-transform-origin : left top;
+	-moz-transform :scale(1);
+	-moz-transform-origin : left top;
+	-ms-transform :scale(1);
+	-ms-transform-origin : left top;
+	-o-transform :scale(1);
+	-o-transform-origin : left top;
+	transform :scale(1);
+	transform-origin : left top;
+	float: left;
+
+	/*background: linear-gradient(to bottom left, #7a0000 0%, #d41c20 100%);*/
+	background: url("../assets/background.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+}
+
+
+#mainDiv
+{
+	/*display: none;*/
+	position: absolute;
+/*	height: auto;
+	min-height: 100% !important;*/
+	height: auto;
+	min-height: 92%;
+	width: 90%;
+
+	border-radius: 10px 10px 10px 10px;
+
+	/*margin-top: 4%;*/
+	margin-top: 6vh;
+
+	background: #fafafa;
+	box-shadow: 10px 0px 10px #730004;
+}
+
+
+#subjectDiv
+{
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+}
+
+#subjectDivHeading
+{
+	position: relative;
+	min-height: 100px;
+	width: 100%;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	font-size: 27px;
+	font-weight: bold;
+
+	margin-top: 10px;
+}
+
+#subjectDivHeadingMargin
+{
+	position: relative;
+	width: 200px;
+	height: 3px;
+	background: #cc1b20;
+	margin-top: -25px;
+}
+
+#subjectDivBody
+{
+	position: relative;
+	/*min-height: 80vh !important;*/
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.subjectOptionDivs
+{
+	position: relative;
+	width: 32vh;
+	height: 35vh;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px grey;
+	text-align: center;
+	background: white;
+
+	margin: 10px 20px 10px 20px;
+
+	font-weight: bold;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+.subject_icon_images
+{
+	margin-bottom: 37px;
+	height: 15vh;
+	width: 15vh;
+}
+
+
+#backButton
+{
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	background: url("../assets/back_icon.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*top: -75px;*/
+	pointer-events: none;
+	visibility: hidden;
+
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+
+
+#subtopicParentDiv
+{
+	position: relative;
+	min-height: 20vh;
+	height: auto;
+	width: 80%;
+	/*background: green;*/
+	display: none;
+
+	/*display: flex;*/
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.subtopicDivs
+{
+	position: relative;
+	height: 10vh;
+	min-width: 22vh;
+	width: auto;
+	margin: 10px 5px 10px 5px;
+
+	font-weight: bold;
+
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px grey;
+	text-align: center;
+	background: white;
+	cursor: pointer;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#subtopicQuestionsParentDiv
+{
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.subtopicQuestionPage
+{
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+
+	/*background: yellow;*/
+
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+	
+	align-items: center;
+}
+
+.questionLinks
+{
+	/*margin: 10px;*/
+/*	min-height: 70px;
+	min-width: 500px;*/
+	position: relative;
+	width: 32vh;
+	height: 33vh;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px grey;
+	text-align: center;
+	background: white;
+	cursor: pointer;
+
+	margin: 60px 40px 20px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.LinkImageDiv
+{
+	position: relative;
+	width: 100%;
+	height: 70%;
+	/*background: #00000029;*/
+	border-radius: 10px 10px 0 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.QuestionLinkImages
+{
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	max-width: 95%;
+	max-height: 100%;
+	width: auto;
+	height: auto;	
+}
+
+.LinkNumberAndText
+{
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	height: 25%;
+
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+	justify-content: flex-start;
+	/*margin: 2px;*/
+
+	font-weight: bold;
+	color: black;
+}
+
+.LinkNumbers
+{
+	position: relative;
+	min-height: 40px;
+	min-width: 40px;
+	border-radius: 50%;
+	background: #F3E1E2;
+	color: #9F1D21;
+	margin: 5px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.LinkTexts
+{
+	height: 100%;
+	width: auto;
+	min-width: 22vh; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+	font-size: 15px;
+	text-align: start;
+}
+
+a { text-decoration: none; }
+
+#pointToSubtopicArrow
+{
+	position: absolute;
+	top: 16vh;
+	left: 42vh;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #9F1D21;
+	background: #F3E1E2 0% 0% no-repeat padding-box;
+	opacity: 0;
+}
+
+#backButtonQuestionPage
+{
+	position: absolute;
+	height: 50px;
+	width: 40px;
+	background: url("../assets/back_icon.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*top: -75px;*/
+	/*pointer-events: none;*/
+
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+
+
+@media only screen and (min-width: 200px) {
+  #subjectDivHeading {
+    font-size: 22px;
+  }
+
+  #pointToSubtopicArrow
+  {
+  	display: none;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  #subjectDivHeading {
+    font-size: 27px;
+  }
+
+  #pointToSubtopicArrow
+  {
+  	display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #subjectDivHeading {
+    font-size: 27px;
+  }
+
+  #pointToSubtopicArrow
+  {
+  	display: flex;
+  }
+}

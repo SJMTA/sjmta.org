@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application name="">	
+<general>	
+		<prompts>
+		<prompt name="previousQuestionButton" text="Back" page="page1" voice=""/>
+		<prompt name="nextQuestionButton" text="Next" page="page1" voice=""/>	
+		</prompts>
+		
+		<miscellaneous>
+		<!-- English Text Word -->
+		</miscellaneous>
+		<images>
+		<!-- English Image Text Word -->
+		</images>
+		<sounds>
+		</sounds>
+	</general>
+</application>
