@@ -15,15 +15,13 @@ function questionInteractive()
 	this.menuButtonClicked = false;
 
 	this.upcomingEvents = { //add new entries after the last point. On the webage, the display starts from the last point
-							1:"Cunningham Piano Co, 1724 Marlton Pike East (RT.70), Cherry Hill NJ 08003 Rowan University, Wilson Hall, 201 Mullica Hill Rd., Glassboro, NJ, 08028",
-							2:"Masterclass Auditions (if required): 1/22/24 Cunningham Piano.",
-							3:"Masterclass application deadline is November 25, 2024.",
-							4:"Technique Competition: 1/21/24 Y.A.L.E. Performance Arts Center 11 Connecticut Ave, Cherry Hill, NJ 08034. Deadline Jan 6, 2024.",
-							5:"Fall Festival: 11/10/24 Rowan University Wilson Center. Deadline is Oct 28, 2024.",
-						  	6:"Deadline for submitting recordings (only if the student is unable to attend in person audition) is Feb 20, 2025. Juried Recital: 3/23/25 Y.A.L.E. Performance Arts Center 11 Connecticut Ave, Cherry Hill, NJ 08034.",
-						  	7:"Juried Recital Auditions: March 2, 2025 Rowan University. Application deadline is Feb 09, 2025.",
-						  	8:"Musicale: 2/9/25 Y.A.L.E Performance Arts Center 11 Connecticut Ave, Cherry Hill, NJ 08034. There are two recitals: between 12 PM and 3 PM. Application deadline is Jan 26, 2025.",
-						  	9:"Juried Recitals registration deadline: Feb 9th, 2025",
+							1:"March 22, Sunday, 2026 – Juried Piano Recital (Yale School).",
+							2:"March 1, Sunday, 2026 – Juried Piano Recital Auditions (Rowan). <br> Deadline for applications 2/8/26.<br> Deadline for recordings 2/20/26 (only if students cannot audition in person).<br>",
+							3:"February 8, Sunday, 2026– Student Musicale / Theme TBA (Yale School).<br> Deadline for applications 1/26/26.",
+							4:"January 25, Sunday, 2026 – Technique Competition & Theory Test? (Yale School).<br> Deadline for applications 1/9/26.",
+							5:"December 7, Sunday, 2025 – Advanced Masterclass (Cunningham Piano).<br> Deadline for applications 11/24/25.",
+						  	6:"November 9, Sunday, 2025 – Fall Festival (Rowan).<br> Deadline for applications: October 24, 2025.",
+						  	7:"Presentation: Tuesday, October 21, 2026, 10AM -12PM Cunningham Pianos by Chiu-Ling Lin. Revitalize, Refresh & Rejuvenate Your Teaching. Exploring Rarely Used Intermediate Repertoire.",
 						  };
 }
 
