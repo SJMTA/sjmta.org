@@ -1,0 +1,5 @@
+# Ignore private keys and credentials
+*.pem
+*.key
+*.env
+
