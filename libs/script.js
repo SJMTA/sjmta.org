@@ -19,7 +19,7 @@ function questionInteractive()
 							2:"March 1, Sunday, 2026 – Juried Piano Recital Auditions (Rowan). <br> Deadline for applications 02/08/26.<br> Deadline for recordings 02/20/26 (only if students cannot audition in person).<br>",
 							3:"February 8, Sunday, 2026 – Student Musicale / Theme: \"Classical Style and Forms through the ages\" (Yale School).<br> Deadline for applications 01/26/26.",
 							4:"January 25, Sunday, 2026 – Technique Competition & Theory Test (Yale School).<br> Deadline for applications 01/09/26.",
-							5:"December 7, Sunday, 2025 – Advanced Masterclass (Cunningham Piano).<br> Deadline for applications 11/24/25.",
+							5:"December 6, Saturday, 2025 – Advanced Masterclass (Cunningham Piano).<br> Deadline for applications 11/24/25.",
 						  	6:"November 9, Sunday, 2025 – Fall Festival (Rowan).<br> Deadline for applications: October 24, 2025.",
 						  	7:"Presentation: Tuesday, October 21, 2026, 10AM -12PM Cunningham Pianos by Chiu-Ling Lin. Revitalize, Refresh & Rejuvenate Your Teaching. Exploring Rarely Used Intermediate Repertoire.",
 						  };
