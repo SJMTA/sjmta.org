@@ -15,7 +15,7 @@ function questionInteractive()
 	this.menuButtonClicked = false;
 
 	this.upcomingEvents = { //add new entries after the last point. On the webage, the display starts from the last point
-							1:"March 22, Sunday, 2026 – Juried Piano Recital (Yale School).",
+							1:"March 15, Sunday, 2026 – Juried Piano Recital (Yale School).",
 							2:"March 1, Sunday, 2026 – Juried Piano Recital Auditions (Rowan). <br> Deadline for applications 02/08/26.<br> Deadline for recordings 02/20/26 (only if students cannot audition in person).<br>",
 							3:"February 8, Sunday, 2026 – Student Musicale / Theme: \"Classical Style and Forms through the ages\" (Yale School).<br> Deadline for applications 01/26/26.",
 							4:"January 25, Sunday, 2026 – Technique Competition & Theory Test (Yale School).<br> Deadline for applications 01/09/26.",
