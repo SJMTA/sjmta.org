@@ -1,218 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Technique Competition Repertoire 2026</title>	
-<style type="text/css">
-	body
-	{
-		position: relative;
-		display: block;
-		min-height: 100%;
-		background-color: #98d9e1;
-		background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
-		background-size: 100%;
-		background-repeat: no-repeat;
-/*		color: white;*/
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-	}
-	td
-	{
-		 padding-top: 20px;
-		 width: 50%;
-		 text-align: center;
-		 align-items: center;
-		 border: 1px solid black; 
-		 border-collapse: collapse;
-	}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technique Competition Repertoire 2026</title>
 
-	.infocells
-	{
-		text-align: center;
-		align-items: center;
-		width: 100%;
-		max-width: 600px;
-		border: 2px solid black;
-		padding: 10px;
-		margin: 5px;
-	}
-</style>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 16px 40px;
+            position: relative;
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
+                linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .intro-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            box-shadow:
+                0 18px 45px rgba(15, 23, 42, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.5);
+            padding: 26px 22px 18px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .intro-card {
+                padding: 30px 36px 22px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        h1 u {
+            text-underline-offset: 4px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0.4rem;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        #TCR {
+            width: 100%;
+        }
+
+        td {
+            padding-top: 20px;
+            width: 50%;
+            text-align: center;
+            align-items: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .levels-grid-wrapper {
+            margin-top: 8px;
+        }
+
+        .levels-grid {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .infocells {
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 360px;
+            border-radius: 16px;
+            border: 1px solid rgba(15, 23, 42, 0.18);
+            padding: 14px 14px 12px;
+            margin: 5px;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 10px 26px rgba(15, 23, 42, 0.18),
+                0 0 0 1px rgba(148, 163, 184, 0.35);
+        }
+
+        .infocells b {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: #035aa6;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(3, 90, 166, 0.3);
+            padding-bottom: 1px;
+            transition:
+                color 0.15s ease,
+                border-color 0.15s ease,
+                background-color 0.15s ease;
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: #02325f;
+            border-color: rgba(2, 50, 95, 0.7);
+            background-color: rgba(3, 90, 166, 0.06);
+        }
+
+        .footer-card {
+            margin-top: 22px;
+            text-align: center;
+            padding: 18px 20px 16px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 10px 24px rgba(15, 23, 42, 0.2),
+                0 0 0 1px rgba(148, 163, 184, 0.4);
+        }
+
+        .footer-card p {
+            margin: 0.4rem 0;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="page-wrapper">
+        <div class="intro-card">
+            <div id="TCR">
+                <h1><u>SJMTA Technique Competition Required Repertoire 2026</u></h1>
+                <h3>Please note that we have included the beginning of each study for your convenience. </h3>
+            </div>
+        </div>
 
-<div id="TCR">
-<h1 style="text-align:center;"><u>SJMTA Technique Competition Required Repertoire 2026</u></h1>
-<h3 style="text-align:center;">Please note that we have included the beginning of each study for your convenience. </h3>
-<br>
+        <!-- Original older repertoire block kept in comments -->
+        <!--
+        <div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="infocells">
+                <b>Level 1:</b> Age 5  to Age 7<br>
+                Schytte,  2 Etudes, in C Major, Op. 160 Nos.  1 and 2 <br>
+                <a href="https://imslp.eu/files/imglnks/euimg/e/ed/IMSLP888447-PMLP1398444-Schytte_25_leichte_op_160-2-11.pdf">Click here for the Document</a> <br>
+                C Major scale, hands alone, two octaves; arpeggio (tonic triad) hands crossing over. Chords:  I-V65-I <br>
+            </div>
 
-<!-- <div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center;">
-	<div class="infocells">
-		<b>Level 1:</b> Age 5  to Age 7<br>
-		Schytte,  2 Etudes, in C Major, Op. 160 Nos.  1 and 2 <br>
-		<a href="https://imslp.eu/files/imglnks/euimg/e/ed/IMSLP888447-PMLP1398444-Schytte_25_leichte_op_160-2-11.pdf">Click here for the Document</a> <br>
-		C Major scale, hands alone, two octaves; arpeggio (tonic triad) hands crossing over. Chords:  I-V65-I <br>	
-	</div>
+            <div class="infocells">
+                <b>Level 2:</b> Age 6 to  Age 8<br>
+                Gozenpud,  Etude in C Major, 8 Easy Etudes No. 2<br>
+                <a href="https://ks15.imslp.org/files/imglnks/usimg/6/67/IMSLP541487-PMLP874815-8.pdf">Click here for the Document</a> <br>
+                C major scale, hands together, two octaves; arpeggio (tonic triad) thumb turn, hands together. <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 2:</b> Age 6 to  Age 8<br>
-		Gozenpud,  Etude in C Major, 8 Easy Etudes No. 2<br>
-		<a href="https://ks15.imslp.org/files/imglnks/usimg/6/67/IMSLP541487-PMLP874815-8.pdf">Click here for the Document</a> <br>
-		C major scale, hands together, two octaves; arpeggio (tonic triad) thumb turn, hands together. <br>
-	</div>
-		
-	<div class="infocells">
-		<b>Level 3:</b> Age 7 to  Age 9<br>
-		Loeschhorn, Etude in Eb major  Op. 65 No.47 <br>
-		<a href="https://s9.imslp.org/files/imglnks/usimg/0/03/IMSLP516150-PMLP836780-Loeschhorn_op_65.pdf">Click here for the Document</a> <br>
-		Eb Major scale, arpeggio (tonic triad), 3 octaves, hands together. <br>
-	</div>
+            <div class="infocells">
+                <b>Level 3:</b> Age 7 to  Age 9<br>
+                Loeschhorn, Etude in Eb major  Op. 65 No.47 <br>
+                <a href="https://s9.imslp.org/files/imglnks/usimg/0/03/IMSLP516150-PMLP836780-Loeschhorn_op_65.pdf">Click here for the Document</a> <br>
+                Eb Major scale, arpeggio (tonic triad), 3 octaves, hands together. <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 5:</b> Age 9 to Age 11<br>
-		Heller,	The Hummingbird,  Op. 46 No.21 in Bb Major <br>
-		<a href="https://vmirror.imslp.org/files/imglnks/usimg/c/c8/IMSLP10212-Heller_-_Op.46_-_30_Etudes.PDF">Click here for the Document</a> <br>
-		Bb Major scale, arpeggio (tonic triad), 4 octaves hands together. <br>
-	</div>
+            <div class="infocells">
+                <b>Level 5:</b> Age 9 to Age 11<br>
+                Heller, The Hummingbird,  Op. 46 No.21 in Bb Major <br>
+                <a href="https://vmirror.imslp.org/files/imglnks/usimg/c/c8/IMSLP10212-Heller_-_Op.46_-_30_Etudes.PDF">Click here for the Document</a> <br>
+                Bb Major scale, arpeggio (tonic triad), 4 octaves hands together. <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 6:</b> Age 10 to Age 12<br>
-		Schytte, Etude in b minor,   Op. 68,  No. 18 <br>
-		<a href="https://ks15.imslp.org/files/imglnks/usimg/b/b3/IMSLP97342-PMLP200181-Ludvig_Schytte_25_Etudes_modernes,_faciles_et_progressives,_Op.68.pdf">Click here for the Document</a> <br>
-		b harmonic minor scale in 3rds;  arpeggio (tonic triad), 4 octaves hands together. <br>
-	</div>
+            <div class="infocells">
+                <b>Level 6:</b> Age 10 to Age 12<br>
+                Schytte, Etude in b minor,   Op. 68,  No. 18 <br>
+                <a href="https://ks15.imslp.org/files/imglnks/usimg/b/b3/IMSLP97342-PMLP200181-Ludvig_Schytte_25_Etudes_modernes,_faciles_et_progressives,_Op.68.pdf">Click here for the Document</a> <br>
+                b harmonic minor scale in 3rds;  arpeggio (tonic triad), 4 octaves hands together. <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 7:</b> Age 11 to Age 13<br>
-		Czerny, Op. 299 , No. 10 in F Major <br>
-		<a href="https://s9.imslp.org/files/imglnks/usimg/d/d8/IMSLP247051-PMLP03452-Czerny,_Carl-Schule_der_Gelaeufigkeit_Op_299_Peters_6963-66_scan.pdf">Click here for the Document</a> <br>
-		F major scale in 3rds, arpeggio (tonic triad) 4 octaves hands together.   <br>
-	</div>
+            <div class="infocells">
+                <b>Level 7:</b> Age 11 to Age 13<br>
+                Czerny, Op. 299 , No. 10 in F Major <br>
+                <a href="https://s9.imslp.org/files/imglnks/usimg/d/d8/IMSLP247051-PMLP03452-Czerny,_Carl-Schule_der_Gelaeufigkeit_Op_299_Peters_6963-66_scan.pdf">Click here for the Document</a> <br>
+                F major scale in 3rds, arpeggio (tonic triad) 4 octaves hands together.   <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 8:</b> Age 12 to Age 15 <br>
-		Cramer,  Fifty Studies No. 16 (56)  in D Major<br>
-		<a href="https://vmirror.imslp.org/files/imglnks/usimg/3/34/IMSLP584733-PMLP645830-Cramer-50Studies.pdf">Click here for the Document</a> <br>
-		D Major scale in thirds and sixths, arpeggio (tonic triad) 4 octaves hands together. <br>
-	</div>
+            <div class="infocells">
+                <b>Level 8:</b> Age 12 to Age 15 <br>
+                Cramer,  Fifty Studies No. 16 (56)  in D Major<br>
+                <a href="https://vmirror.imslp.org/files/imglnks/usimg/3/34/IMSLP584733-PMLP645830-Cramer-50Studies.pdf">Click here for the Document</a> <br>
+                D Major scale in thirds and sixths, arpeggio (tonic triad) 4 octaves hands together. <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 9:</b> Age 13 to Age 16<br>
-		Liszt, Etude Op. 1 No. 8 in C minor <br>
-		<a href="https://imslp.eu/files/imglnks/euimg/d/d1/IMSLP143680-PMLP11082-Liszt_NLA_Serie_I_Band_18_01_Etude_en_douze_exercices_S.136_scan.pdf">Click here for the Document</a> <br>
-		C major, minor harmonic and melodic scales, arpeggios (tonic, major, minor, diminished 7th and dominant 7th in the key of C*) 4 octaves hands together. <br>
-		*vii7 starting on b <br>
-		*V7 starting on G <br>
-	</div>
+            <div class="infocells">
+                <b>Level 9:</b> Age 13 to Age 16<br>
+                Liszt, Etude Op. 1 No. 8 in C minor <br>
+                <a href="https://imslp.eu/files/imglnks/euimg/d/d1/IMSLP143680-PMLP11082-Liszt_NLA_Serie_I_Band_18_01_Etude_en_douze_exercices_S.136_scan.pdf">Click here for the Document</a> <br>
+                C major, minor harmonic and melodic scales, arpeggios (tonic, major, minor, diminished 7th and dominant 7th in the key of C*) 4 octaves hands together. <br>
+                *vii7 starting on b <br>
+                *V7 starting on G <br>
+            </div>
 
-	<div class="infocells">
-		<b>Level 10:</b> to Age 18 <br>
-		Chopin, Etude  in F minor, Op. 10 No. 9<br>
-		<a href="https://ks15.imslp.org/files/imglnks/usimg/e/e5/IMSLP514955-PMLP1969-Chopin_-_Etudes,_Op.10.pdf">Click here for the Document</a> <br>
-		F minor scale, harmonic and melodic, in 3rds, 6ths and 10ths; arpeggios, (Major, minor, Dominant 7th, diminished 7th, augmented – in the key of F*) 4 octaves hands together.  <br>
-		*vii7 starting on E <br>
-		*V7 starting on C <br>
-	</div>
+            <div class="infocells">
+                <b>Level 10:</b> to Age 18 <br>
+                Chopin, Etude  in F minor, Op. 10 No. 9<br>
+                <a href="https://ks15.imslp.org/files/imglnks/usimg/e/e5/IMSLP514955-PMLP1969-Chopin_-_Etudes,_Op.10.pdf">Click here for the Document</a> <br>
+                F minor scale, harmonic and melodic, in 3rds, 6ths and 10ths; arpeggios, (Major, minor, Dominant 7th, diminished 7th, augmented – in the key of F*) 4 octaves hands together.  <br>
+                *vii7 starting on E <br>
+                *V7 starting on C <br>
+            </div>
+        </div>
+        -->
 
-</div> -->
+        <div class="levels-grid-wrapper">
+            <div class="levels-grid">
+                <div class="infocells">
+                    <b>Level 1:</b> Age 5 to Age 7<br>
+                    <!-- Schytte,  2 Etudes, in C Major, Op. 160 Nos.  1 and 2 <br>
+                    <a href="https://imslp.eu/files/imglnks/euimg/e/ed/IMSLP888447-PMLP1398444-Schytte_25_leichte_op_160-2-11.pdf">Click here for the Document</a> <br> -->
+                    Zhilinsky, <i>Etude</i> in C Major <br> <br> <br>
+                    C Major scale, hands alone, two octaves; arpeggio (tonic triad) hands crossing over. <br>
+                </div>
 
+                <div class="infocells">
+                    <b>Level 2:</b> Age 6 to Age 8<br>
+                    Gozenpud,  Etude in C Major, 8 Easy Etudes No. 2<br>
+                    <a target="_blank" href="https://imslp.eu/files/imglnks/euimg/e/e5/IMSLP989952-PMLP410786-czerny_germer_vol.1-2.pdf">Click here for the Document</a> <br>
+                    Czerny-Germer, No. 3 and 4 in C Major <br>
+                    C major scale, hands together, two octaves; arpeggio (tonic triad) hands crossing over or hands together. <br>
+                </div>
 
+                <div class="infocells">
+                    <b>Level 3:</b> Age 7 to Age 9<br>
+                    Loeschhorn, Etude in D major Op. 65 No. 21 <br>
+                    <a target="_blank" href="https://ks15.imslp.org/files/imglnks/usimg/0/03/IMSLP516150-PMLP836780-Loeschhorn_op_65.pdf">Click here for the Document</a> <br>
+                    D major scale, arpeggio (tonic triad), 2 octaves, hands together. <br>
+                </div>
 
-<div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center;">
-	<div class="infocells">
-		<b>Level 1:</b> Age 5 to Age 7<br>
-		<!-- Schytte,  2 Etudes, in C Major, Op. 160 Nos.  1 and 2 <br>
-		<a href="https://imslp.eu/files/imglnks/euimg/e/ed/IMSLP888447-PMLP1398444-Schytte_25_leichte_op_160-2-11.pdf">Click here for the Document</a> <br> -->
-		Zhilinsky, <i>Etude</i> in C Major <br> <br> <br>
-		C Major scale, hands alone, two octaves; arpeggio (tonic triad) hands crossing over. <br>	
-	</div>
+                <div class="infocells">
+                    <b>Level 4:</b> Age 8 to Age 10<br>
+                    Burgmuller, Etude in F Major, Op. 100 No. 17 <i>La Babillarde</i> <br>
+                    <a target="_blank" href="https://s9.imslp.org/files/imglnks/usimg/8/8c/IMSLP337046-SIBLEY1802.25365.14c6-39087009887755score.pdf">Click here for the Document</a> <br>
+                    F Major scale, arpeggio (tonic triad), 3 octaves (in triplets) hands together <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 2:</b> Age 6 to Age 8<br>
-		Gozenpud,  Etude in C Major, 8 Easy Etudes No. 2<br>
-		<a target="_blank" href="https://imslp.eu/files/imglnks/euimg/e/e5/IMSLP989952-PMLP410786-czerny_germer_vol.1-2.pdf">Click here for the Document</a> <br>
-		Czerny-Germer, No. 3 and 4 in C Major <br>
-		C major scale, hands together, two octaves; arpeggio (tonic triad) hands crossing over or hands together. <br>
-	</div>
-		
-	<div class="infocells">
-		<b>Level 3:</b> Age 7 to Age 9<br>
-		Loeschhorn, Etude in D major Op. 65 No. 21 <br>
-		<a target="_blank" href="https://ks15.imslp.org/files/imglnks/usimg/0/03/IMSLP516150-PMLP836780-Loeschhorn_op_65.pdf">Click here for the Document</a> <br>
-		D major scale, arpeggio (tonic triad), 2 octaves, hands together. <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 5:</b> Age 9 to Age 11<br>
+                    Heller, Stephen; Etude in D Major, Op. 46 No.12 <br>
+                    <a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/7/72/IMSLP955281-PMLP25007-heller_30_estudos.pdf">Click here for the Document</a> <br>
+                    D Major and harmonic and melodic scales, arpeggio (tonic triad), 4 octaves hands together <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 4:</b> Age 8 to Age 10<br>
-		Burgmuller, Etude in F Major, Op. 100 No. 17 <i>La Babillarde</i> <br>
-		<a target="_blank" href="https://s9.imslp.org/files/imglnks/usimg/8/8c/IMSLP337046-SIBLEY1802.25365.14c6-39087009887755score.pdf">Click here for the Document</a> <br>
-		F Major scale, arpeggio (tonic triad), 3 octaves (in triplets) hands together <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 6:</b> Age 10 to Age 12<br>
+                    Ravina,Henri, Etudes Harmonieuses,Op. 50, No. 22 in b minor <br>
+                    <a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP13464-Ravina_op.50_Etudes_harmonieuses.pdf">Click here for the Document</a> <br>
+                    b harmonic and melodic minor scale in thirds, arpeggio (tonic triad), 4 octaves hands together. <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 5:</b> Age 9 to Age 11<br>
-		Heller, Stephen; Etude in D Major, Op. 46 No.12 <br>
-		<a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/7/72/IMSLP955281-PMLP25007-heller_30_estudos.pdf">Click here for the Document</a> <br>
-		D Major and harmonic and melodic scales, arpeggio (tonic triad), 4 octaves hands together <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 7:</b> Age 11 to Age 13<br>
+                    Czerny, Op. 299 , No. 19 in F Major <br>
+                    <a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/9/95/IMSLP01000-Cz299a.pdf">Click here for the Document</a> <br>
+                    F major scale, arpeggio (tonic triad); f harmonic minor Scale; 4 octaves hands together.   <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 6:</b> Age 10 to Age 12<br>
-		Ravina,Henri, Etudes Harmonieuses,Op. 50, No. 22 in b minor <br>
-		<a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP13464-Ravina_op.50_Etudes_harmonieuses.pdf">Click here for the Document</a> <br>
-		b harmonic and melodic minor scale in thirds, arpeggio (tonic triad), 4 octaves hands together. <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 8:</b> Age 12 to Age 15 <br>
+                    Cramer Etude No. 18 in d minor<br>
+                    <a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/d/d0/IMSLP908381-PMLP9974-Cramer-60StudiesV2.pdf">Click here for the Document</a> <br>
+                    D minor scale in thirds and sixths, arpeggio (tonic triad) 4 octaves hands together. Scales will be performed as triplets. <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 7:</b> Age 11 to Age 13<br>
-		Czerny, Op. 299 , No. 19 in F Major <br>
-		<a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/9/95/IMSLP01000-Cz299a.pdf">Click here for the Document</a> <br>
-		F major scale, arpeggio (tonic triad); f harmonic minor Scale; 4 octaves hands together.   <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 9:</b> Age 13 to Age 15<br>
+                    Grieg.Studie (Hommage <i>a</i> Chopin) from Moods, Op. 73 <br>
+                    <a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/8/87/IMSLP183718-PMLP02547-Grieg_Klavierwerke_Band_2_Peters_Op_73_Stimmungen_scan.pdf">Click here for the Document</a> <br>
+                    F major, minor harmonic and melodic scales, arpeggios (tonic, major, minor, diminished 7 th and dominant 7<sup>th</sup> in the key of F<sup>*</sup>) 4 octaves hands together <br>
+                    *vii7 starting on e <br>
+                    *V7 starting on C <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 8:</b> Age 12 to Age 15 <br>
-		Cramer Etude No. 18 in d minor<br>
-		<a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/d/d0/IMSLP908381-PMLP9974-Cramer-60StudiesV2.pdf">Click here for the Document</a> <br>
-		D minor scale in thirds and sixths, arpeggio (tonic triad) 4 octaves hands together. Scales will be performed as triplets. <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 10:</b> Age 14 to Age 16 <br>
+                    Chopin, Etude in c minor, Op. 10 No.12 <i>“Revolutionary”</i><br>
+                    <a target="_blank" href="https://ks15.imslp.org/files/imglnks/usimg/d/d4/IMSLP60293-PMLP01969-Chopin_Etudes_Schirmer_Mikuli_Op_10_scan.pdf">Click here for the Document</a> <br>
+                    c minor harmonic and melodic scales in 3<sup>rd</sup> s, 6<sup>th</sup> s and 10<sup>th</sup> s; arpeggios, (major, minor, dominant 7<sup>th</sup>, diminished 7<sup>th</sup> , – in the key of c minor<sup>*</sup>) 4 octaves hands together. <br>
+                    *vii7 starting on b <br>
+                    *V7 starting on G <br>
+                </div>
 
-	<div class="infocells">
-		<b>Level 9:</b> Age 13 to Age 15<br>
-		Grieg.Studie (Hommage <i>a</i> Chopin) from Moods, Op. 73 <br>
-		<a target="_blank" href="https://vmirror.imslp.org/files/imglnks/usimg/8/87/IMSLP183718-PMLP02547-Grieg_Klavierwerke_Band_2_Peters_Op_73_Stimmungen_scan.pdf">Click here for the Document</a> <br>
-		F major, minor harmonic and melodic scales, arpeggios (tonic, major, minor, diminished 7 th and dominant 7<sup>th</sup> in the key of F<sup>*</sup>) 4 octaves hands together <br>
-		*vii7 starting on e <br>
-		*V7 starting on C <br>
-	</div>
+                <div class="infocells">
+                    <b>Level 11:</b> Age 15 to Age 18 <br>
+                    Kapustin. Etude Op. 40 No 6. “Pastorale”</i><br>
+                    <a target="_blank" href="https://www.scribd.com/document/404135356/Kapustin-8-Concert-Etudes-Op-40-pdf">Click here for the Document</a> <br>
+                    Bb Major, minor harmonic and melodic scale, 3<sup>rd</sup> s, 6<sup>th</sup> s and 10<sup>th</sup> s; arpeggios, (Major, minor, Dominant 7<sup>th</sup> , diminished 7<sup>th</sup>,– all in the key of Bb) 4 octaves hands together. <br>
+                </div>
+            </div>
+        </div>
 
-	<div class="infocells">
-		<b>Level 10:</b> Age 14 to Age 16 <br>
-		Chopin, Etude in c minor, Op. 10 No.12 <i>“Revolutionary”</i><br>
-		<a target="_blank" href="https://ks15.imslp.org/files/imglnks/usimg/d/d4/IMSLP60293-PMLP01969-Chopin_Etudes_Schirmer_Mikuli_Op_10_scan.pdf">Click here for the Document</a> <br>
-		c minor harmonic and melodic scales in 3<sup>rd</sup> s, 6<sup>th</sup> s and 10<sup>th</sup> s; arpeggios, (major, minor, dominant 7<sup>th</sup>, diminished 7<sup>th</sup> , – in the key of c minor<sup>*</sup>) 4 octaves hands together. <br>
-		*vii7 starting on b <br>
-		*V7 starting on G <br>
-	</div>
+        <div class="footer-card">
+            <p>
+                <a href="../../assets/documents/SJMTA 2026 Technique Comp Form.pdf" target="_blank">
+                    Click here for Application Form
+                </a>
+            </p>
 
-	<div class="infocells">
-		<b>Level 11:</b> Age 15 to Age 18 <br>
-		Kapustin. Etude Op. 40 No 6. “Pastorale”</i><br>
-		<a target="_blank" href="https://www.scribd.com/document/404135356/Kapustin-8-Concert-Etudes-Op-40-pdf">Click here for the Document</a> <br>
-		Bb Major, minor harmonic and melodic scale, 3<sup>rd</sup> s, 6<sup>th</sup> s and 10<sup>th</sup> s; arpeggios, (Major, minor, Dominant 7<sup>th</sup> , diminished 7<sup>th</sup>,– all in the key of Bb) 4 octaves hands together. <br>
-	</div>
+            <p>
+                For any inquiries or questions please email Veda Zuponcic at
+                <a href="mailto:zuponcic@rowan.edu">zuponcic@rowan.edu</a>
+            </p>
 
-</div>
-<br><br>
-
-<a href="../../assets/documents/SJMTA 2026 Technique Comp Form.pdf" target="_blank">Click here for Application Form</a></b><br><br> 
-
-<br>
-For any inquiries or questions please email Veda Zuponcic at <a href="mailto:zuponcic@rowan.edu">zuponcic@rowan.edu</a>
-<br><br>
-If you have trouble with any of these links, please go directly to <a target="_blank" href="https://imslp.org/">www.imslp.org</a> 
-
+            <p>
+                If you have trouble with any of these links, please go directly to
+                <a target="_blank" href="https://imslp.org/">www.imslp.org</a>
+            </p>
+        </div>
+    </div>
 </body>
-</html>	
+</html>

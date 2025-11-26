@@ -1,63 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>sjmta</title>	
-<style type="text/css">
-	html
-	{
-		height: 100%;
-	}
-	body
-	{
-		height: 100%;
-		background-color: #98d9e1;
-		background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);		
-		background-size: 100%;
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-	}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SJMTA Directions</title>
+
+  <!-- Preload the forest morning image (optional but improves UX) -->
+  <link rel="preload" as="image" href="../../assets/forest-morning-green.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #0f1a0f;
+
+      /* 🌄 Bright Morning Green Forest Background */
+      background:
+        linear-gradient(
+          rgba(60, 85, 60, 0.45),
+          rgba(40, 70, 40, 0.55)
+        ),
+        url("../../assets/forest-morning-green.png");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* Frosted Glass Panel */
+    #ourProgramsContent {
+      width: 100%;
+      max-width: 900px;
+
+      background: rgba(255, 255, 255, 0.40);
+      backdrop-filter: blur(12px) saturate(150%);
+      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      border-radius: 18px;
+      padding: 2.5rem 2rem 2.75rem;
+
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      letter-spacing: 0.06em;
+      color: #0f1a0f;
+    }
+
+    h2 {
+      margin-bottom: 1.2rem;
+      margin-top: 0.5rem;
+      text-align: center;
+      color: #145214;
+    }
+
+    h3 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
+      color: #0f2f0f;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    a {
+      color: #0b3d91;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: 0.15s ease;
+    }
+
+    a:hover {
+      color: #082d6f;
+      border-bottom-color: #082d6f;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.75rem 1rem;
+      }
+
+      #ourProgramsContent {
+        padding: 1.9rem 1.25rem 2.25rem;
+      }
+    }
+  </style>
 </head>
-<link rel="preload" as="image" href="../../assets/aboutUs.jpeg">
+
 <body>
 
 <div id="ourProgramsContent">
-<h1><u>Directions</u></h1>
-<h2><span style="color: aliceblue;">SJMTA Program Venues</h2>
+  <h1><u>Directions</u></h1>
+  <h2>SJMTA Program Venues</h2>
 
-<h3>YALE Performance Arts Center</h3>
-<span>
-YALE School <br>
-750 Marlton Pike, Cherry Hill, NJ 08002 <br><br>
+  <h3>YALE Performance Arts Center</h3>
+  <span>
+    YALE School <br>
+    750 Marlton Pike, Cherry Hill, NJ 08002 <br><br>
+  </span>
 
-</span>
+  <h3>Cunningham Piano Company</h3>
+  <span>
+    1724 Marlton Pike <br>
+    East Cherry Hill, NJ 08003 <br>
+    <a href="tel:+18566517596">(856) 651-7596</a> <br><br>
 
-<h3>Cunningham Piano Company</h3>
-<span>
-1724 Marlton Pike <br>
-East Cherry Hill, NJ 08003 <br>
-<a href="tel:+18566517596">(856) 651-7596</a> <br><br>
+    All of our Board Meetings and programs (except the Fall Festival & Juried Recital Auditions)
+    are held here.<br>
+    <a href="https://www.cunninghampiano.com/pages/contact" target="_blank">
+      Click here
+    </a> for directions (select the Cherry Hill location).
+  </span>
 
-All of our Board Meetings and programs, with the exception of the Fall Festival and Juried Recital Auditions, will be held here. <br><a href="https://www.cunninghampiano.com/pages/contact" target="">Click here</a> for directions to Cunningham Piano Company (select "Cherry Hill" location).
-</span>
+  <h3>Rowan University - Wilson Hall</h3>
+  <span>
+    Rowan University <br>
+    Glassboro, NJ <br><br>
 
-<h3>Rowan University - Wilson Hall</h3>
-<span>
-Rowan University <br>
-Glassboro, NJ <br><br>
+    Our Fall Festival & Spring Juried Recital Auditions are held here. <br>
+    <a href="../../assets/documents/Directions_to_Wilson_Hall.doc">
+      Click here
+    </a> for printer-friendly directions. <br><br>
+  </span>
 
-
-Our Fall Festival and Spring Juried Recital Auditions will be held here. <br>
-<a href="../../assets/documents/Directions_to_Wilson_Hall.doc">Click here</a> for printer-friendly directions. <br><br>
-</span>
-
-<span>
-<br>"Ah, music. A magic beyond all we do here!" - J.K. Rowling, Harry Potter and the Sorcerer's Stone, 1997
-</span>
+  <span>
+    <br>
+    “Ah, music. A magic beyond all we do here!”<br>
+    — J.K. Rowling, *Harry Potter and the Sorcerer's Stone* (1997)
+  </span>
 
 </div>
 
 </body>
-</html>	
+</html>

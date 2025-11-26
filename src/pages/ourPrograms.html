@@ -1,77 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>sjmta Programs</title>	
-<style type="text/css">
-	body
-	{
-		background-color: #98d9e1;
-		background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
-		background-size: 100%;
-/*		background-repeat: no-repeat;*/
-/*		color: white;*/
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-	}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sjmta Programs</title>
+
+  <!-- Optional: preload meadow background -->
+  <link rel="preload" as="image" href="../../assets/forest-sunlit-meadow.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+
+      /* 🌼 Sunlit meadow background */
+      background:
+        linear-gradient(
+          rgba(255, 245, 220, 0.78),
+          rgba(210, 235, 210, 0.9)
+        ),
+        url("../../assets/forest-sunlit-meadow.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+    }
+
+    #ourProgramsContent {
+      width: 100%;
+      max-width: 1000px;
+
+      /* 🌫️ Frosted glass panel */
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(12px) saturate(150%);
+      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      border-radius: 18px;
+      padding: 2.5rem 2rem 2.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+      color: #1a1a1a;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2.1rem;
+      letter-spacing: 0.06em;
+      color: #204321;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #234422;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      color: #234422;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #b3362d;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      text-decoration-color: #b3362d;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: #7f241f;
+      border-bottom-color: #7f241f;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.75rem 1rem;
+      }
+
+      #ourProgramsContent {
+        padding: 1.9rem 1.25rem 2.25rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
-<link rel="preload" as="image" href="../../assets/aboutUs.jpeg">
 <body>
 
 <div id="ourProgramsContent">
-<h1><u>Our Programs</u></h1>
-<h2>SJMTA offers its members a varied program of lecture-demonstrations, master classes, and performance opportunities aimed at enhancing piano teaching and study in the Southern New Jersey area. <br><br>
+  <h1><u>Our Programs</u></h1>
 
-Please see our <a href="COE.html" target=""><span style="color: #b3362d; text-decoration: underline;; text-decoration-color: #b3362d;">Calendar of Events</span></a> for more detail about this year's activities, including links to any required forms. <br>
-</h2>
+  <h2>
+    SJMTA offers its members a varied program of lecture-demonstrations, master classes, and performance opportunities aimed at enhancing piano teaching and study in the Southern New Jersey area. <br><br>
 
-<h3>Tuesday Morning Speakers' Series</h3>
-<span>
-The cornerstone of our annual program is our series of lecture-demonstrations devoted to pedagogical and musical topics, offered free to members by experts in the field.  As part of this series each year, an “Open Studio” presentation by an SJMTA master teacher gives a glimpse into that teacher’s philosophy, techniques, and trade secrets.  A “Members’ Forum” provides the opportunity for networking and open discussion of selected topics of common interest. <br><br>
+   <p style="white-space: normal;">
+    <span style="white-space: normal;">Please see our <a href="COE.html" style="color: #b3362d; text-decoration: underline; text-decoration-color: #b3362d;">Calendar of Events</a> for more detail about this year's activities, including links to any required forms.</span> 
+  </p>
 
-Guests are welcome to attend these sessions for a fee of $5 per session.
-</span>
 
-<h3>Fall Festival</h3>
-<span>
-This is a non-competitive festival, taking place on a Sunday in November,  which provides musical growth through evaluation and encouragement.  Each participating student performs two memorized selections for a visiting teacher, who offers suggestions and written commentary about the performance.  The participating student’s teacher and one parent are invited to attend the performance, which typically takes place in a private classroom.	<br>
-</span>
+  </h2>
 
-<h3>Master Class</h3>
-<span>
-A highlight of our program is the annual master class, available to qualified late-intermediate to advanced students of member teachers.  Typically held in early December, this class offers the opportunity for several serious students to work with outstanding piano performers and pedagogues.	<br>
-</span>
+  <h3>Tuesday Morning Speakers' Series</h3>
+  <span>
+    The cornerstone of our annual program is our series of lecture-demonstrations devoted to pedagogical and musical topics, offered free to members by experts in the field. As part of this series each year, an “Open Studio” presentation by an SJMTA master teacher gives a glimpse into that teacher’s philosophy, techniques, and trade secrets. A “Members’ Forum” provides the opportunity for networking and open discussion of selected topics of common interest. <br><br>
+    Guests are welcome to attend these sessions for a fee of $5 per session.
+  </span>
 
-<h3>Technique Competition</h3>
-<span>
-	The SJMTA annual technique competition is aimed at enhancing students’ ability to develop and master secure piano technique.  Participating students from elementary through collegiate levels perform required scales and arpeggios, as well as selected études, for panels of judges.   Offered on a Saturday afternoon in January, this competition offers awards for the best performance in each category.
-</span>
+  <h3>Fall Festival</h3>
+  <span>
+    This is a non-competitive festival, taking place on a Sunday in November, which provides musical growth through evaluation and encouragement. Each participating student performs two memorized selections for a visiting teacher, who offers suggestions and written commentary about the performance. The participating student’s teacher and one parent are invited to attend the performance, which typically takes place in a private classroom.
+  </span>
 
-<h3>Student Musicale</h3>
-<span>
-	This thematic forum, designed as an informal way for students to perform for each other, is open to young musicians of all levels of development without any auditions. SJMTA member teachers are free to submit any or all of their students to participate as soloists or duet partners in this event.
-</span>
+  <h3>Master Class</h3>
+  <span>
+    A highlight of our program is the annual master class, available to qualified late-intermediate to advanced students of member teachers. Typically held in early December, this class offers the opportunity for several serious students to work with outstanding piano performers and pedagogues.
+  </span>
 
-<h3>Spring Juried Recitals</h3>
-<span>
-	These recitals offer a wonderful performance opportunity for late elementary, intermediate, and advanced students of member teachers.  Auditions are conducted by independent adjudicators and take place the first Sunday in March; students must perform two compositions of contrasting styles from two different periods of musical literature.  Those students selected to play will perform one of their pieces in the Spring Recitals on a Sunday afternoon in mid-March.	<br>
-</span>
+  <h3>Technique Competition</h3>
+  <span>
+    The SJMTA annual technique competition is aimed at enhancing students’ ability to develop and master secure piano technique. Participating students from elementary through collegiate levels perform required scales and arpeggios, as well as selected études, for panels of judges. Offered on a Saturday afternoon in January, this competition offers awards for the best performance in each category.
+  </span>
 
-<h3>Sylvia Denbo Memorial Scholarship</h3>
-<span>
-	Thanks to a generous bequest made by one of our original members, Sylvia Denbo, SJMTA has offered the annual Sylvia Denbo Memorial Scholarship in the amount of $1000 since 1997. This scholarship is intended to give encouragement and financial assistance to a high school senior planning to pursue a career in music at the college level.  All scholarship applicants must be current students of SJMTA members and have studied with a member teacher for at least two years at the high school level.  Auditions are held in April, and candidates are evaluated on both their piano performance and the quality of their written materials.  The winner’s performance is a highlight of our annual Teachers’ Recital in May.	<br>
-</span>
+  <h3>Student Musicale</h3>
+  <span>
+    This thematic forum, designed as an informal way for students to perform for each other, is open to young musicians of all levels of development without any auditions. SJMTA member teachers are free to submit any or all of their students to participate as soloists or duet partners in this event.
+  </span>
 
-<h3>Aurelia Bender Teachers' Recital</h3>
-<span>
-	Our teachers’ recital, held annually in May,  offers “those who teach” a chance to perform for each other pieces loved for many years or newly discovered – a dynamic way for us to share music with each other. <br>
-</span>
+  <h3>Spring Juried Recitals</h3>
+  <span>
+    These recitals offer a wonderful performance opportunity for late elementary, intermediate, and advanced students of member teachers. Auditions are conducted by independent adjudicators and take place the first Sunday in March; students must perform two compositions of contrasting styles from two different periods of musical literature. Those students selected to play will perform one of their pieces in the Spring Recitals on a Sunday afternoon in mid-March.
+  </span>
 
-<h3>Please see our <a href="COE.html" target=""><span style="color: #b3362d; text-decoration: underline;; text-decoration-color: #b3362d;">Calendar of Events</span></a> for dates, times, and locations of this year's events.</h3>
+  <h3>Sylvia Denbo Memorial Scholarship</h3>
+  <span>
+    Thanks to a generous bequest made by one of our original members, Sylvia Denbo, SJMTA has offered the annual Sylvia Denbo Memorial Scholarship in the amount of $1000 since 1997. This scholarship is intended to give encouragement and financial assistance to a high school senior planning to pursue a career in music at the college level. All scholarship applicants must be current students of SJMTA members and have studied with a member teacher for at least two years at the high school level. Auditions are held in April, and candidates are evaluated on both their piano performance and the quality of their written materials. The winner’s performance is a highlight of our annual Teachers’ Recital in May.
+  </span>
+
+  <h3>Aurelia Bender Teachers' Recital</h3>
+  <span>
+    Our teachers’ recital, held annually in May, offers “those who teach” a chance to perform for each other pieces loved for many years or newly discovered – a dynamic way for us to share music with each other.
+  </span>
+
+  <h3 style="white-space: normal;">
+    <span style="white-space: normal;">
+      Please see our
+      <a href="COE.html" target="" style="display: inline; color: #b3362d; text-decoration: underline; text-decoration-color: #b3362d;">
+        Calendar of Events
+      </a>
+      for dates, times, and locations of this year's events.
+    </span>
+  </h3>
+
+
 
 </div>
 
 </body>
-</html>	
+</html>

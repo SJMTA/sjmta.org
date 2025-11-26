@@ -1,78 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Contact sjmta</title>	
-<style type="text/css">
-	html
-	{
-		height: 100%;
-	}
-	body
-	{
-		height: 100%;
-		background-color: #98d9e1;
-		background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
-		background-size: 100%;
-		background-repeat: no-repeat;
-/*		color: white;*/
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-		max-width: 100%;
-	}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact sjmta</title>
 
-	.responsive-iframe {
-	max-width: 100%;
-	padding-top: 56.25%;
-	position: relative;
-	width: 100%;
-	}	
+    <link rel="preload" as="image" href="../../assets/aboutUs.jpeg" />
 
-	.responsive-iframe iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 32px 16px 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
+                linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 960px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            box-shadow:
+                0 18px 45px rgba(15, 23, 42, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.5);
+            padding: 28px 22px 24px;
+        }
+
+        @media (min-width: 720px) {
+            .card {
+                padding: 34px 38px 28px;
+            }
+        }
+
+        #aboutUsContent h1 {
+            margin-top: 0;
+            margin-bottom: 0.4rem;
+            font-size: 2rem;
+        }
+
+        #aboutUsContent h1 u {
+            text-underline-offset: 4px;
+        }
+
+        #aboutUsContent h2 {
+            margin-top: 0.2rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        #aboutUsContent h4 {
+            margin-top: 1.6rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.05rem;
+        }
+
+        #aboutUsContent h3 {
+            margin-top: 2rem;
+            margin-bottom: 0;
+            font-size: 1.2rem;
+        }
+
+        #aboutUsContent b {
+            font-weight: 650;
+        }
+
+        #aboutUsContent u {
+            text-underline-offset: 3px;
+        }
+
+        a {
+            color: #035aa6;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(3, 90, 166, 0.3);
+            padding-bottom: 1px;
+            transition:
+                color 0.15s ease,
+                border-color 0.15s ease,
+                background-color 0.15s ease;
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: #02325f;
+            border-color: rgba(2, 50, 95, 0.7);
+            background-color: rgba(3, 90, 166, 0.06);
+        }
+
+        .responsive-iframe {
+            max-width: 100%;
+            padding-top: 56.25%;
+            position: relative;
+            width: 100%;
+        }
+
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<link rel="preload" as="image" href="../../assets/aboutUs.jpeg">
+
 <body>
+    <div class="page-wrapper">
+        <div class="card">
+            <div id="aboutUsContent">
+                <h1><u>2026 SJMTA Student Musicale:</u></h1>
+                <h2>Classical Styles and Forms Through the Ages</h2>
 
-<div id="aboutUsContent">
-<h1><u>2026 SJMTA Student Musicale:</u></h1>
-<h2>Classical Styles and Forms Through the Ages</h2>
+                <b>Purpose:</b> This thematic forum is open to <b>young pianists, string and woodwind students, as well as singers of all levels of development,</b> without auditions. <br><br>
 
-<b>Purpose:</b> This thematic forum is open to <b>young pianists, string and woodwind students, as well as singers of all levels of development,</b> without auditions. <br><br>
+                <b>Date: Sunday, February 8th, 2026 </b> at Y.A.L.E. School Arts Center, 11 Connecticut Street and Rt. 70, Cherry Hill, NJ 08002. There will be one or two recitals between 12PM and 3PM depending  on the number of applications received. <br><br>
 
-<b>Date: Sunday, February 8th, 2026 </b> at Y.A.L.E. School Arts Center, 11 Connecticut Street and Rt. 70, Cherry Hill, NJ 08002. There will be one or two recitals between 12PM and 3PM depending  on the number of applications received. <br><br>
+                <b>Theme:</b> Classical Styles and Forms Through the Ages.	<br><br>
 
-<b>Theme:</b> Classical Styles and Forms Through the Ages.	<br><br>
+                <b>Requirements: </b>
+                Participating student(s) must study with an SJMTA member teacher.
+	                SJMTA member teachers are free to submit any or all of their students.
+	                Each participant may perform <u>one</u> solo composition and/or <u>one</u> duet.
+	                Memorization is required for solo compositions only.	<br><br>
 
+                Failure to abide by any of the guidelines will result in a teacher’s ineligibility to submit students the following year.	<br><br>
 
-<b>Requirements: </b>
-Participating student(s) must study with an SJMTA member teacher.
-	SJMTA member teachers are free to submit any or all of their students.
-	Each participant may perform <u>one</u> solo composition and/or <u>one</u> duet.
-	Memorization is required for solo compositions only.	<br><br>
+                <b>Fees:</b> 
+	                $15 for each piece entered, whether solo or duet.
+	                If a student is playing a solo and a duet, the student will need to pay $15 for the solo piece and $7.50 for half of the duet fee.
 
-Failure to abide by any of the guidelines will result in a teacher’s ineligibility to submit students the following year.	<br><br>
+                <b>Duty Deposit:</b> We require all participating teachers to pay a $50 “duty deposit” fee or volunteer their time on the day of the event.	<br><br>
 
+                <u>Important: No refunds will be given once registrations have been submitted. </u> <br>
 
-<b>Fees:</b> 
-	$15 for each piece entered, whether solo or duet.
-	If a student is playing a solo and a duet, the student will need to pay $15 for the solo piece and $7.50 for half of the duet fee.
+                <h4><u>DEADLINE:</u> Registration deadline is January 26, 2026.</h4>
 
-<b>Duty Deposit:</b> We require all participating teachers to pay a $50 “duty deposit” fee or volunteer their time on the day of the event.	<br><br>
+                <br><br><br>
 
-<u>Important: No refunds will be given once registrations have been submitted. </u> <br>
-
-<h4><u>DEADLINE:</u> Registration deadline is January 26, 2026.</h4>
-
-<br><br><br>
-
-<h3><a href="../../assets/documents/Student_Musicale_registration.pdf" target="_blank">Download the registration form here!</a></h3>
-</div>
-
+                <h3><a href="../../assets/documents/Student_Musicale_registration.pdf" target="_blank">Download the registration form here!</a></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,74 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Advance Masterclass SJMTA</title>	
-<style type="text/css">
-	body
-	{
-		background-color: #f0e4c7;
-		background-image: linear-gradient(315deg, #f0e4c7 0%, #d4bb81 74%);
-		background-size: 100%;
-		background-repeat: no-repeat;
-/*		color: white;*/
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-		max-width: 100%;
-	}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025 SJMTA Master Class</title>
 
-	.responsive-iframe {
-	max-width: 100%;
-	padding-top: 56.25%;
-	position: relative;
-	width: 100%;
-	}	
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-	.responsive-iframe iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      background-color: #f0e4c7;
+      background-image: linear-gradient(315deg, #f0e4c7 0%, #d4bb81 74%);
+      background-attachment: fixed;
+    }
 
-	.flex-container {
-  	display: flex;
-  	flex-direction: row;
-		}
+    .page-wrapper {
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
 
-	/* Responsive layout - makes a one column layout instead of a two-column layout */
-	@media (max-width: 800px) {
-	  .flex-container {
-	    flex-direction: column;
-	  }
-	}
-</style>
+    .masterclass-container {
+      width: 100%;
+      max-width: 960px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .masterclass-container {
+        padding: 1.75rem 1.25rem;
+      }
+    }
+
+    h1,
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 0.75rem;
+      color: #5a4520;
+      font-weight: 500;
+    }
+
+    .application-link-wrapper {
+      margin-top: 1.75rem;
+      text-align: center;
+    }
+
+    .application-link {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: #b3832f;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.1s ease, box-shadow 0.1s ease,
+        background-color 0.2s ease;
+    }
+
+    .application-link:hover,
+    .application-link:focus-visible {
+      background: #955f14;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .application-link:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1.75rem;
+      margin-top: 2.25rem;
+      align-items: flex-start;
+    }
+
+    /* Optional image block, if you re-enable the image later */
+    .artist-photo {
+      flex: 0 0 260px;
+      max-width: 260px;
+    }
+
+    .artist-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .artist-bio {
+      flex: 1 1 0;
+      color: #2c1c08;
+    }
+
+    .artist-bio p {
+      margin: 0 0 1rem;
+    }
+
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .artist-photo {
+        max-width: 100%;
+      }
+    }
+
+    /* Keep this if you’ll embed videos later */
+    .responsive-iframe {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      margin-top: 2rem;
+    }
+
+    .responsive-iframe iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
+  <div class="page-wrapper">
+    <main
+      id="advancedMasterclassContent"
+      class="masterclass-container"
+      aria-labelledby="masterclass-heading"
+    >
+      <header>
+        <h1 id="masterclass-heading">2025 SJMTA Master Class</h1>
+        <h3>Saturday, December 6th, 2025 at 3:00 pm</h3>
 
-<div id="advancedMasterclassContent" style="display: inline-block; max-width:100%;">
-<h1 style="text-align:center;">Advanced Masterclass (Cunningham Piano)<br>
-<a href="../../assets/documents/Advanced Masterclass.docx" target="_blank">Download the application form here!</a>
-</h1>
-<div class="flex-container">
-<img style="display: inline-block; position:relative; width:360px; height:500px; border-radius: 10px; margin: 10px;" src="../../assets/peskanov.png" alt="">
-<span>
-<h2>Alexander Peskanov:</h2><br>
+        <div class="application-link-wrapper">
+          <a
+            class="application-link"
+            href="../../assets/documents/Application.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Download the application form
+          </a>
+        </div>
+      </header>
 
-"This brilliant pianist can create incredible excitement and knows how to please the crowd", the Washington Post reported in a review of Rachmaninoff's Third Concerto performed by Alexander Peskanov and the Richmond Symphony Orchestra at the Kennedy Center. Peskanov's American debut as an orchestral soloist was with the National Symphony Orchestra conducted by Mstislav Rostropovich, and since then he has appeared internationally with orchestras such as the London Symphony Orchestra, SABC Symphony Orchestra, Cape Town Symphony Orchestra, English Chamber Orchestra, Polish Chamber Philharmonic Orchestra, Janacek Chamber Orchestra and Hong Kong Philharmonic Orchestra, and in the United States with orchestras in Baltimore, St. Louis, Houston, Salt Lake City, Richmond and many other cities. Over the years, Alexander has performed in Central and South America, with the national orchestras of Colombia, Venezuela, Costa Rica and Guatemala.<br><br>
+      <section class="flex-container" aria-label="Guest artist biography">
+        <!--
+        <div class="artist-photo">
+          <img
+            src="../../assets/peskanov.png"
+            alt="Portrait of Dr. Kairy Koshoeva"
+          />
+        </div>
+        -->
 
-"Peskanov is an accomplished pianist and prolific composer who has contributed an abundance of consistently engaging musical repertoire for the genre," as quoted in The Pianist's Guide to Standard Teaching and Performance Concertos by Karen Beres and Christopher Hahn. Alexander Peskanov is also a highly sought-after composer of classical works, including concertos for piano, piano solos, flute and piano, saxophone, trumpet and chamber music. He has written twenty-one Piano Concertos, two of which, Concerto No. 1 for Piano and Strings (published by Hal Leonard), and Spring Concerto for Piano and Orchestra (published by Alfred Music), were selected by the National Federation of Music Clubs for 2016-2024. The Peskanov Music Festival at Medellin, Colombia in 2023 featured 120 young pianists performing exclusively Peskanov compositions, including 19 piano concertos, various piano solos, duets, and trios for six hands. The winners of numerous international music competitions performed Piano Concertos by Alexander Peskanov at Carnegie Weill Hall (New York), and his Azery Rhapsody and Spring Concerto were premiered in London, England. Peskanov's Concerto for Piano Quartet and Orchestra (Two Pianos, Eight Hands) was commissioned by the American Piano Quartet and premiered at the Franz Liszt Academy (Budapest, Hungary). Scheduled to be published in 2024, is Peskanov's "Sunshine Suite - Volumes I and II, comprised of piano solos, duets and trios.<br><br>
+        <div class="artist-bio">
+          <p>
+            Kairy Koshoeva earned her Doctor of Musical Arts degree from the
+            University of Missouri, Kansas City. She also holds Bachelor’s and
+            Master’s degrees from the Gnessin Academy of Music in Moscow, and an
+            Artist Diploma certificate from the Oberlin Conservatory of Music.
+            She joined the NSMS faculty in 2015.
+          </p>
 
-Orchestras that have performed Peskanov works include Orchestra of St. John (London, UK), Moravian Chamber Orchestra (Brno, Czech Republic), Bad Reichenhall Philharmonic in Upper Bavaria, City of Laufen, (Germany), Archi dei Patriarchi Orchestra (Italy), Jaialdia Francisco Escudero symphonic orchestra (Spain), Moscow State Orchestra "Seasons" (Russia), Tallinn Chamber Orchestra (Estonia), Zacatecas International Music Festival Orchestra (Mexico), KZN Symphony Orchestra (South Africa), Gauteng Philharmonic Orchestra (South Africa), Cape town Symphony Orchestra (South Africa), Andreev Folk Instruments Orchestra (St. Petersburg, Russia), Teclas Sinfónicas (Bogota, Colombia), Kuala Lumpur Performing Arts Centre Orchestra (Malaysia), Moldova State Orchestra (Moldova), Azerbaijan State Philharmonic Orchestra (Baku, Azerbaijan), Hungarian Radio and Television Orchestra (Budapest, Hungary), Salaya Modern Ensemble (Bangkok, Thailand), and BMTG Chamber Orchestra (New York).<br><br>
+          <p>
+            Dr. Koshoeva has garnered awards from around the globe, including
+            top prizes at the International Piano Competition in Vicenza, Italy
+            and the N. Rubinstein Competition in Paris; the Gold Medal at the
+            2004 Rachmaninoff Awards in Moscow; and first prize at the
+            Chautauqua Music Festival concerto competition in New York. In 2003,
+            her home country awarded her the prestigious title of Honored Artist
+            of Kyrgyzstan. She has performed in Israel, France, Germany, Russia,
+            Turkey, Switzerland, and the U.S. In 2013, Dr. Koshoeva received the
+            Marian Bowker Davidson Collaborative Pianist Award for her
+            performance of Bach’s <em>Goldberg Variations</em> with the Owen/Cox
+            Dance Group. She also earned the 2015 Berta Eisberg Award for
+            collaboration with Owen/Cox performing Hindemith’s
+            <em>Ludus Tonalis</em>. She has studied with Bella Zubok, Faina
+            Kharmatz, Michael Burshtin (Kyrgyzstan/Israel), Vera Nosina
+            (Moscow), Monique Duphil (Oberlin), and Robert Weirich (UMKC); and
+            was coached by renowned pianist Lazar Berman in Weimar Master
+            Classes.
+          </p>
 
-Alexander Peskanov is the founder of the BMTG Intercontinental Piano Competition - Music of Immortal and Living Composers, whose winners perform in New York at Carnegie Hall. He is currently the President of the of Brooklyn Music Teachers Guild. Peskanov has been named composer of the year in Western New York, New Jersey and Eastern Tennessee. In 2024, he will be featured in Australia at Melbourne University, as piano recitalist and guest lecturer. While in Australia, he will travel to Sydney to participate in a Peskanov Piano Concerto marathon.<br><br>
+          <p>
+            Dr. Koshoeva enjoys a varied career as a soloist, chamber musician,
+            and teacher. While in Kansas City, she taught music at a host of
+            higher learning institutions including Avila, Park, and Rockhurst
+            Universities, UMKC, and the University of Kansas. Many of her
+            students have won prestigious piano competitions, some leading to
+            performances in Carnegie Hall. Dr. Koshoeva was interviewed for
+            Princeton Info in 2022.
+          </p>
+        </div>
+      </section>
 
-Peskanov has recorded two albums for Naxos Records, which include: Brahms Sonatas Nos. 1-3 for Violin and Piano with violinist Ilya Kaler, and Scott Joplin Piano Rags, Vol. I. Since then, his recording of Joplin's Maple Leaf Rag has been reissued for My First Classical Albums and Story of American Classical Music. Peskanov has recorded a CD of his piano compositions entitled Spirits of the Winds - Peskanov Plays Peskanov, which was broadcast on satellite broadcasts on all American national radio stations. He has also recorded Concerto Concertante by Morton Gould with the Bronx Arts Ensemble on Heritage Records and Brahms Sonatas Nos. 1-3 for Violin and Piano with violinist, Eugene Fodor (Clarity Records).<br><br>
-
-Alexander Peskanov has received three special awards from the American Society of Composers and Publishers (ASCAP). Peskanov graduated from the Stolyarsky School of Music in Odessa, Ukraine, and received his bachelor's and master's degrees from The Juilliard School in New York. He is the author of a six-book series titled "Russian Technical Regimen for the Piano," published by Willis. Peskanov is also the founder of the popular and engaging Piano Olympics Program.<br><br>
-
-<span>
-</div>
+      <!-- Optional video embed area (if needed)
+      <div class="responsive-iframe">
+        <iframe src="VIDEO_URL_HERE" title="Master Class Performance"></iframe>
+      </div>
+      -->
+    </main>
+  </div>
 </body>
-</html>	
+</html>

@@ -1,114 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Fall Festival SJMTA</title>	
-<style type="text/css">
-	body
-	{
-		background-color: #98d9e1;
-		background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
-		background-size: 100%;
-		background-repeat: no-repeat;
-/*		color: white;*/
-		padding: 0 2% 0 2%;
-		font-size: 18px;
-		max-width: 100%;
-	}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fall Festival SJMTA</title>
 
-	.responsive-iframe {
-	max-width: 100%;
-	padding-top: 56.25%;
-	position: relative;
-	width: 100%;
-	}	
+    <link rel="preload" as="image" href="../../assets/aboutUs.jpeg" />
 
-	.responsive-iframe iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.5), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
+                linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
+            background-attachment: fixed;
+            color: #1f2933;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 960px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            box-shadow:
+                0 18px 45px rgba(15, 23, 42, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.5);
+            padding: 32px 26px 30px;
+        }
+
+        @media (min-width: 720px) {
+            .card {
+                padding: 36px 40px 34px;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0.35rem;
+            letter-spacing: 0.03em;
+        }
+
+        h1 u {
+            text-underline-offset: 4px;
+        }
+
+        h2 {
+            margin-top: 1.8rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.4rem;
+        }
+
+        #fallFestivalContent b {
+            font-weight: 650;
+        }
+
+        #fallFestivalContent u {
+            text-underline-offset: 3px;
+        }
+
+        p {
+            margin-top: 0.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        ul {
+            margin-top: 0.4rem;
+            margin-bottom: 1.4rem;
+            padding-left: 1.3rem;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        .section-spacer {
+            margin-bottom: 1.6rem;
+        }
+
+        .deadline-highlight {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: yellow;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+            margin-top: 0.6rem;
+        }
+
+        .downloads-card {
+            margin-top: 26px;
+            padding: 18px 20px 14px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow:
+                0 10px 28px rgba(15, 23, 42, 0.18),
+                0 0 0 1px rgba(148, 163, 184, 0.4);
+        }
+
+        .downloads-card b {
+            display: inline-block;
+            margin-bottom: 0.7rem;
+        }
+
+        .downloads-card ul {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #035aa6;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(3, 90, 166, 0.3);
+            padding-bottom: 1px;
+            transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: #02325f;
+            border-color: rgba(2, 50, 95, 0.7);
+            background-color: rgba(3, 90, 166, 0.06);
+        }
+
+        .responsive-iframe {
+            max-width: 100%;
+            padding-top: 56.25%;
+            position: relative;
+            width: 100%;
+        }
+
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<link rel="preload" as="image" href="../../assets/aboutUs.jpeg">
+
 <body>
+    <div class="page-wrapper">
+        <div class="card">
+            <div id="fallFestivalContent">
+                <h1>
+                    <u>SJMTA Fall Festival 2025</u><br>
+                    Rowan University 11/09/25
+                </h1>
 
-<div id="fallFestivalContent">
-<h1 style="text-align:center;"><u>SJMTA Fall Festival 2025</u><br>
-Rowan University 11/09/25</h1>
-<h2>Please join us!</h2>
-<b>PURPOSE:</b> This is a non-competitive festival, now in its 29<sup>th</sup> year, which provides musical growth through
-evaluation and encouragement. The teacher and <u>one</u> parent are welcome to attend the performance.<br><br>
-One of the goals of the Fall Festival is to have the students master and perform two (2) pieces that are
-contrasting in style, mood and musical era.<br><br><br>
+                <h2>Please join us!</h2>
 
-<b>ELIGIBILITY:</b> Teachers may submit students at elementary, intermediate and advanced levels.<br>
-<u>Important Note</u>: Because scheduling is complex, teachers who enter a large number of
-students may not be able to attend all performances.<br><br>
-All teachers who submit students are required to volunteer their time to help with the
-Festival. (See volunteer form). Each teacher must submit a separate $50 “duty deposit”
-check in addition to registration fees. This check will be returned when the teacher
-arrives to volunteer.<br><br><br>
+                <div class="section-spacer">
+                    <b>PURPOSE:</b> This is a non-competitive festival, now in its 29<sup>th</sup> year, which provides
+                    musical growth through
+                    evaluation and encouragement. The teacher and <u>one</u> parent are welcome to attend the
+                    performance.<br><br>
+                    One of the goals of the Fall Festival is to have the students master and perform two (2) pieces that
+                    are
+                    contrasting in style, mood and musical era.
+                </div>
 
-<b>REPERTOIRE:</b> Students are required to perform 2 memorized pieces.<br>
-<ul>
-<li> One piece by any composer of standard piano literature (Baroque to Contemporary). </li>
-<li> The second piece is the teachers’ choice. (contrasting style/different era)</li>
-<li> The student will be asked to play a scale for each piece.</li>
-<li> <u>Please note</u>: Repertoire beyond Sonatinas and easy 2 Part Inventions is advanced. Also,
-remember to allow a minimum of 5 minutes for judge’s verbal comments.</li>
-</ul>
+                <div class="section-spacer">
+                    <b>ELIGIBILITY:</b> Teachers may submit students at elementary, intermediate and advanced levels.<br>
+                    <u>Important Note</u>: Because scheduling is complex, teachers who enter a large number of
+                    students may not be able to attend all performances.<br><br>
+                    All teachers who submit students are required to volunteer their time to help with the
+                    Festival. (See volunteer form). Each teacher must submit a separate $50 “duty deposit”
+                    check in addition to registration fees. This check will be returned when the teacher
+                    arrives to volunteer.
+                </div>
 
+                <div class="section-spacer">
+                    <b>REPERTOIRE:</b> Students are required to perform 2 memorized pieces.<br>
+                    <ul>
+                        <li> One piece by any composer of standard piano literature (Baroque to Contemporary). </li>
+                        <li> The second piece is the teachers’ choice. (contrasting style/different era)</li>
+                        <li> The student will be asked to play a scale for each piece.</li>
+                        <li> <u>Please note</u>: Repertoire beyond Sonatinas and easy 2 Part Inventions is advanced. Also,
+                            remember to allow a minimum of 5 minutes for judge’s verbal comments.</li>
+                    </ul>
+                </div>
 
-<b>FEES:</b> 
-<ul>
-<li>Elementary: $30 for 10 minutes.</li>
-<li>Intermediate: $35 for 15 minutes.</li>
-<li>Advanced: $40 for 20 minutes.</li>
-<b>NO REFUNDS ALLOWED ON REGISTRATION FEES</b><br>
-</ul>
+                <div class="section-spacer">
+                    <b>FEES:</b>
+                    <ul>
+                        <li>Elementary: $30 for 10 minutes.</li>
+                        <li>Intermediate: $35 for 15 minutes.</li>
+                        <li>Advanced: $40 for 20 minutes.</li>
+                        <b>NO REFUNDS ALLOWED ON REGISTRATION FEES</b><br>
+                    </ul>
+                </div>
 
-<b>LOCATION:</b> Rowan University, Wilson Hall, Glassboro, NJ<br>
-<b>DATE:</b> Sunday, November 9, 2025<br><br><br>
+                <div class="section-spacer">
+                    <b>LOCATION:</b> Rowan University, Wilson Hall, Glassboro, NJ<br>
+                    <b>DATE:</b> Sunday, November 9, 2025
+                </div>
 
+                <div class="section-spacer">
+                    <b>AWARDS:</b> The judge will provide students with verbal comments after the performance. The
+                    certificates
+                    and written evaluations will be mailed to the participating teachers.
+                    <ul>
+                        <li>Superior rating - certificate with a gold seal.<br>
+                            <u>Both pieces must be Superior to receive a Superior rating.</u>
+                        </li>
+                        <li>Excellent rating – certificate with silver seal.</li>
+                        <li>Good rating – certificate with bronze seal.</li>
+                        <li>Fair rating – certificate for participating.</li>
+                    </ul>
+                </div>
 
-<b>AWARDS:</b> The judge will provide students with verbal comments after the performance. The certificates
-and written evaluations will be mailed to the participating teachers.
-<ul>
-<li>Superior rating - certificate with a gold seal.<br>
-<u>Both pieces must be Superior to receive a Superior rating.</u></li>
-<li>Excellent rating – certificate with silver seal.</li>
-<li>Good rating – certificate with bronze seal.</li>
-<li>Fair rating – certificate for participating.</li>
-</ul>
-<br>
+                <div class="section-spacer">
+                    <b>HOW TO ENTER:</b> The teacher should collect fees from the students.
+                    <ul>
+                        <li>One combined check only, payable to SJMTA.</li>
+                        <li>The $50 “duty deposit” check with volunteer form.</li>
+                        <li>The registration form (via email is acceptable).</li>
+                        <li>Mail to Marcia J Yurko, 1 Cobbler Court, Sewell. NJ.</li>
+                    </ul>
 
+                    <span class="deadline-highlight">
+                        <b>DEADLINE:</b> Postmarked no later than October 24, 2025
+                    </span>
+                </div>
+            </div>
 
-<b>HOW TO ENTER:</b> The teacher should collect fees from the students.
-<ul>
-<li>One combined check only, payable to SJMTA.</li>
-<li>The $50 “duty deposit” check with volunteer form.</li>
-<li>The registration form (via email is acceptable).</li>
-<li>Mail to Marcia J Yurko, 1 Cobbler Court, Sewell. NJ.</li>
-</ul>
+            <div class="downloads-card">
+                <b>Download forms here:</b>
+                <ul>
+                    <li>
+                        <a href="../../assets/documents/2025_SJMTA Fall Festival Registration.pdf" target="_blank">
+                            2025 SJMTA Fall Festival Registration Form
+                        </a>
+                    </li><br>
 
-<span style="background: yellow;"><b>DEADLINE:</b> Postmarked no later than October 24, 2025</span>
-</div>
-<br><br>
+                    <li>
+                        <a href="../../assets/documents/2025_SJMTA Fall Festival_Repertoire.pdf" target="_blank">
+                            SJMTA Fall Piano Festival Repertoire (November 09, 2025)
+                        </a>
+                    </li><br>
 
-<b>Download forms here:
-	<ul>
-		<li><a href="../../assets/documents/2025_SJMTA Fall Festival Registration.pdf" target="_blank">2025 SJMTA Fall Festival Registration Form</a></li><br>
+                    <li>
+                        <a href="../../assets/documents/2025 FF Volunteer Opportunities.pdf" target="_blank">
+                            SJMTA Fall Piano Festival 2025 VOLUNTEER Form
+                        </a>
+                    </li><br>
 
-		<li><a href="../../assets/documents/2025_SJMTA Fall Festival_Repertoire.pdf" target="_blank">SJMTA Fall Piano Festival Repertoire (November 09, 2025)</a></li><br>
-	
-		<li><a href="../../assets/documents/2025 FF Volunteer Opportunities.pdf" target="_blank">SJMTA Fall Piano Festival 2025 VOLUNTEER Form</a></li><br>
-
-		<li><a href="../../assets/documents/FF Judging Form.pdf" target="_blank">Fall Festival Judging Forms</a></li><br>
-	</ul>	
-
+                    <li>
+                        <a href="../../assets/documents/FF Judging Form.pdf" target="_blank">
+                            Fall Festival Judging Forms
+                        </a>
+                    </li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
-</html>	
+</html>
