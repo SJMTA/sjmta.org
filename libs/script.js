@@ -15,7 +15,7 @@ function questionInteractive()
 	this.menuButtonClicked = false;
 
 	this.upcomingEvents = { //add new entries after the last point. On the webage, the display starts from the last point
-							1:"March 15, Sunday, 2026 – Juried Piano Recital (YALE Performance Arts Center). ",
+							1:"November 1, Sunday, 2026 – Fall Festival (Rowan).<br> Deadline for applications: Monday, October 19, 2026.",
 							// 2:"March 1, Sunday, 2026 – Juried Piano Recital Auditions (Rowan). <br> Deadline for applications 02/08/26.<br> Deadline for recordings 02/20/26 (only if students cannot audition in person).<br>",
 							// 3:"February 8, Sunday, 2026 – Student Musicale / Theme: \"Classical Style and Forms through the ages\" (YALE Performance Arts Center).<br> Deadline for applications 01/26/26.",
 							// 4:"January 25, Sunday, 2026 – Technique Competition & Theory Test (YALE Performance Arts Center).<br> Deadline for applications 01/09/26.",
@@ -72,7 +72,7 @@ questionInteractive.prototype.createHomeScreen = function()
 	// {
 	// 	htmlContent += 			'<div id="event_'+i+'" class="events">'+(this.upcomingEvents[i])+'</div>';		//creates upcoming event divs
 	// }
-	htmlContent += 			'<div id="event_'+1+'" class="events">'+(this.upcomingEvents[1])+'<a style="color:lightblue" href="src/pages/JPRA.html#performance-time">Click here to see event details. </a> </div>';		//creates upcoming event divs
+	htmlContent += 			'<div id="event_'+1+'" class="events">'+(this.upcomingEvents[1])+'<a style="color:lightblue" href="src/pages/fall_festival.html">Click here to see event details. </a> </div>';		//creates upcoming event divs
 	htmlContent +=			'</div>';
 	htmlContent += 		'</div>';
 	htmlContent += '</div>';
