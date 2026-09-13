@@ -1,2 +1,2 @@
 # sjmta.org
-The main website
+The official SJMTA website.
