@@ -4,3 +4,9 @@
 *.env
 
 .DS_Store
+
+# Local development tools and browser output
+node_modules/
+test-results/
+playwright-report/
+__pycache__/

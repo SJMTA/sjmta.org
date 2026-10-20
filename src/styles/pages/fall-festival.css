@@ -1,0 +1,153 @@
+/* Styles for src/pages/fall_festival.html. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.5), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
+    linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
+  background-attachment: fixed;
+  color: #1f2933;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 960px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.5);
+  padding: 32px 26px 30px;
+}
+
+@media (min-width: 720px) {
+  .card {
+    padding: 36px 40px 34px;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.03em;
+}
+
+h1 u {
+  text-underline-offset: 4px;
+}
+
+h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+}
+
+#fallFestivalContent b {
+  font-weight: 650;
+}
+
+#fallFestivalContent u {
+  text-underline-offset: 3px;
+}
+
+p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.section-spacer {
+  margin-bottom: 1.6rem;
+}
+
+.deadline-highlight {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: yellow;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+  margin-top: 0.6rem;
+}
+
+.downloads-card {
+  margin-top: 26px;
+  padding: 18px 20px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 10px 28px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(148, 163, 184, 0.4);
+}
+
+.downloads-card b {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.downloads-card ul {
+  margin-bottom: 0;
+}
+
+a {
+  color: #035aa6;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(3, 90, 166, 0.3);
+  padding-bottom: 1px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: #02325f;
+  border-color: rgba(2, 50, 95, 0.7);
+  background-color: rgba(3, 90, 166, 0.06);
+}
+
+.responsive-iframe {
+  max-width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

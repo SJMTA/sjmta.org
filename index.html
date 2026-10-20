@@ -1,68 +1,149 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>sjmta</title>	
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="data:;base64,iVBORwOKGO=" />
-	<script src="libs/jquery-1.7.1.min.js"></script>
-	<script src="libs/jquery_ui.js"></script>
-	<script src="libs/common.js"></script>
-	<script src="libs/loadxmldoc.js"></script>
-	<!-- <script src="../../../../libs/mathquill/mathquill.js"></script> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South Jersey Music Teachers' Association</title>
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <script src="src/scripts/home.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="site-header" data-site-header>
+      <a class="site-logo" href="#top" aria-label="SJMTA home">
+        <img
+          src="assets/logo2.png"
+          alt="South Jersey Music Teachers' Association"
+          width="315"
+          height="55"
+        />
+      </a>
+      <nav id="primary-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="src/pages/aboutUs.html">About Us</a>
+        <a href="src/pages/ourPrograms.html">Our Programs</a>
+        <a href="src/pages/COE.html">Calendar of Events</a>
+        <a href="src/pages/JPRA.html">Juried Piano Recital Auditions</a>
+        <a href="src/pages/contactUs.html">Contact Us</a>
+        <a href="src/pages/directions.html">Directions</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        hidden
+      ></button>
+    </header>
 
-	<script src="libs/script.js?v=1.0"></script>
-	<script src="libs/PxLoader.js"></script>
-    <script  src="libs/PxLoaderImage.js"></script>
-	
-<script>
-		var getParameters = getURLParameters();	
-		$(function()
-		{
-			// $("#container").hide();
+    <main>
+      <section class="hero" aria-labelledby="site-title">
+        <div class="hero-intro">
+          <div class="hero-copy">
+            <h1 id="site-title" class="hero-title">South Jersey Music Teachers' Association</h1>
+            <p class="hero-tagline">A Local Resource for Piano Teachers</p>
+            <p class="hero-affiliation">An Affiliate of the Music Teachers' National Association</p>
+          </div>
+        </div>
+        <aside class="hero-events" aria-labelledby="upcoming-events-heading">
+          <div class="events-panel">
+            <h2 id="upcoming-events-heading" class="events-heading">Upcoming Events</h2>
+            <div class="events-list" tabindex="0" role="region" aria-label="All 2026–2027 events">
+              <!-- Keep each announcement and its detail link together, in date order. -->
+              <p class="event">
+                October 20, 2026 – Presentation by Dr. Chiu-Ling Lin.<br />
+                “Unlocking the Romantic Spirit: A Progressive Journey Through 19th Century
+                Literature”.<br />
+                <a href="src/pages/COE.html#presentation">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                November 1, Sunday, 2026 – Fall Festival (Rowan).<br />
+                Deadline for applications: Monday, October 19, 2026.<br />
+                <a href="src/pages/fall_festival.html">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                November 14–15, 2026 – NJMTA Conference.<br />
+                Princeton Theological Seminary.<br />
+                <a href="src/pages/COE.html#conferences">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                December 6, Sunday, 2026 – Advanced Masterclass (Cunningham Piano).<br />
+                Deadline for applications: November 20, 2026.<br />
+                <a href="src/pages/advanced_masterclass.html">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                January 24, Sunday, 2027 – Technique Competition &amp; Theory Test (Cunningham
+                Piano).<br />
+                Deadline for applications: January 8, 2027.<br />
+                <a href="src/pages/TechniqueCompetitionRepertoire.html"
+                  >Click here to see event details.</a
+                >
+              </p>
+              <p class="event">
+                February 7, Sunday, 2027 – Student Musicale.<br />
+                Theme: Exploring The Romantic Era.<br />
+                Deadline for applications: January 22, 2027.<br />
+                <a href="src/pages/studentMusicale.html">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                February 28, Sunday, 2027 – Juried Piano Recital Auditions (Rowan University).<br />
+                Deadline for applications: February 12, 2027.<br />
+                <a href="src/pages/JPRA.html">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                March 21, Sunday, 2027 – Juried Piano Recital (Yale School).<br />
+                <a href="src/pages/JPRA.html#performance-time">Click here to see event details.</a>
+              </p>
+              <p class="event">
+                April 2–6, 2027 – MTNA National Conference.<br />
+                St. Louis, Missouri.<br />
+                <a href="src/pages/COE.html#conferences">Click here to see event details.</a>
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
 
-			//Load XML
-			var gameXMLFile = "xml/en_in.xml";
-			interactiveObj = new questionInteractive();
-			interactiveObj.init();
-			// loadXMLNEW(gameXMLFile, function ()
-        	// {
-        	// 	interactiveObj = new questionInteractive();
-        	// 	// var imageArray = [];
-        	// 	imageArray.push(""); //Write Image Name here
-
-        	// 	if(imageArray.length > 0)
-        	// 	{
-        	// 		var loader = new PxLoader();
-        	// 		$.each(imageArray,function(key,value)
-			// 		{
-        	// 			var pxImage = new PxLoaderImage('assets/'+value); 
-        	// 			loader.add(pxImage); 
-			// 		});	
-
-			// 		loader.addCompletionListener(function() {
-			// 			$("#container").show();
-			// 			$("#load").hide();
-			// 			interactiveObj.init();
-			// 		}); 
-			// 		loader.start();
-        	// 	}
-        	// 	else
-        	// 	{
-        	// 		$("#container").show();
-			// 		$("#load").hide();
-			// 		interactiveObj.init();
-        	// 	}
-        	// });
-		});
-	</script>  
- 
-</head>
-<body>
-<div id="load"></div>
-<div id="container">
-	<div id="mainDiv"></div>
-</div>
-</body>
-</html>	
+      <section class="about-section" aria-labelledby="about-heading">
+        <div class="about-heading">
+          <h2 id="about-heading">What we do</h2>
+        </div>
+        <div class="mission">
+          The South Jersey Music Teachers' Association is dedicated to promoting the professional
+          interests of piano teachers and furthering the advancement of music education in the
+          southern New Jersey area. South Jersey Music Teachers' Association offers a varied program
+          of presentations, festivals, competitions, and performances, including:
+          <ul>
+            <li>Annual lecture series for teachers.</li>
+            <li>Performing opportunities for students.</li>
+            <li>Pedagogical resources and networking.</li>
+          </ul>
+        </div>
+        <div class="join-heading">
+          <h2>Join Us!</h2>
+        </div>
+        <div class="membership">
+          The South Jersey Music Teachers' Association is dedicated to promoting the professional
+          interests of piano teachers and furthering the advancement of music education in the
+          southern New Jersey area. Membership in SJMTA is your passport to enriching opportunities
+          for you and for all of your piano students. Through our affiliation with MTNA, the Music
+          Teachers National Association (<a
+            href="https://www.mtna.org/"
+            target="_blank"
+            rel="noopener"
+            >www.mtna.org</a
+          >), the resources of a national network of music teachers is available to you as well.
+          Want to check us out first? Our Tuesday Morning Speakers' Series is open to the public for
+          a nominal fee of $5 per session. It's a great way to see what we have to offer, meet some
+          of our members, and make contact with teachers who share your interests. Interested in
+          joining us? Visit the MTNA website (<a
+            href="https://www.mtna.org/"
+            target="_blank"
+            rel="noopener"
+            >www.mtna.org</a
+          >) and follow the directions for joining. Please use the form on our Contact Us page to
+          ask a question or request more information.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

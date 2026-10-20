@@ -1,0 +1,190 @@
+/* Styles for src/pages/TechniqueCompetitionRepertoire.html. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px 40px;
+  position: relative;
+  min-height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
+    linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.5);
+  padding: 26px 22px 18px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 30px 36px 22px;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+}
+
+h1 u {
+  text-underline-offset: 4px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(3, 90, 166, 0.08);
+  border: 1px solid rgba(3, 90, 166, 0.18);
+  font-size: 0.98rem;
+}
+
+.overview {
+  margin-top: 14px;
+}
+
+.overview p {
+  margin: 0.65rem 0;
+}
+
+.overview ul {
+  margin: 0.5rem 0 0.9rem;
+  padding-left: 1.2rem;
+}
+
+.overview li {
+  margin: 0.25rem 0;
+}
+
+.overview .block {
+  margin-top: 14px;
+}
+
+.levels-grid-wrapper {
+  margin-top: 8px;
+}
+
+.levels-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.infocells {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  padding: 14px 14px 12px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 26px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(148, 163, 184, 0.35);
+}
+
+.infocells b {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.infocell-image {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 10px auto 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
+}
+
+a {
+  color: #035aa6;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(3, 90, 166, 0.3);
+  padding-bottom: 1px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: #02325f;
+  border-color: rgba(2, 50, 95, 0.7);
+  background-color: rgba(3, 90, 166, 0.06);
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-card {
+  margin-top: 22px;
+  text-align: center;
+  padding: 18px 20px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.2),
+    0 0 0 1px rgba(148, 163, 184, 0.4);
+}
+
+.footer-card p {
+  margin: 0.4rem 0;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "sjmta-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static SJMTA website; Node dependencies are development tools only.",
+  "scripts": {
+    "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "check": "python3 scripts/check_site.py",
+    "test:browser": "node scripts/check-browser.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "playwright": "1.64.0",
+    "prettier": "3.9.10"
+  }
+}

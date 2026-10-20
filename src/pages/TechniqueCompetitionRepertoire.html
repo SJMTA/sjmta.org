@@ -1,399 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SJMTA Technique Competition & Theory Test 2027</title>
 
-    <style type="text/css">
-        * { box-sizing: border-box; }
+    <link rel="stylesheet" href="../styles/pages/technique-competition.css" />
+  </head>
 
-        body {
-            margin: 0;
-            padding: 32px 16px 40px;
-            position: relative;
-            min-height: 100vh;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            background:
-                radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 55%),
-                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.4), transparent 55%),
-                linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-        }
+  <body>
+    <main class="page-wrapper">
+      <div class="card">
+        <div id="TCR">
+          <h1><u>SJMTA Technique Competition and Theory Test</u></h1>
+          <h3><span class="highlight">Sunday, January 24, 2027</span></h3>
 
-        .page-wrapper {
-            width: 100%;
-            max-width: 1200px;
-        }
+          <div class="overview">
+            <p>
+              As the ultimate goal of piano lessons is to enable students to express their musical
+              understanding through secure technique, SJMTA holds an annual technique competition
+              aimed at enhancing, developing and mastering piano technique.
+            </p>
 
-        .card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
-            border-radius: 18px;
-            box-shadow:
-                0 18px 45px rgba(15, 23, 42, 0.25),
-                0 0 0 1px rgba(255, 255, 255, 0.5);
-            padding: 26px 22px 18px;
-            margin-bottom: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .card {
-                padding: 30px 36px 22px;
-            }
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-            font-size: 1.9rem;
-            letter-spacing: 0.03em;
-        }
-
-        h1 u { text-underline-offset: 4px; }
-
-        h3 {
-            text-align: center;
-            margin-top: 0.4rem;
-            margin-bottom: 0.4rem;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-
-        .highlight {
-            display: inline-block;
-            padding: 2px 10px;
-            border-radius: 999px;
-            background: rgba(3, 90, 166, 0.08);
-            border: 1px solid rgba(3, 90, 166, 0.18);
-            font-size: 0.98rem;
-        }
-
-        .overview {
-            margin-top: 14px;
-        }
-
-        .overview p {
-            margin: 0.65rem 0;
-        }
-
-        .overview ul {
-            margin: 0.5rem 0 0.9rem;
-            padding-left: 1.2rem;
-        }
-
-        .overview li {
-            margin: 0.25rem 0;
-        }
-
-        .overview .block {
-            margin-top: 14px;
-        }
-
-        .levels-grid-wrapper {
-            margin-top: 8px;
-        }
-
-        .levels-grid {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 14px;
-        }
-
-        .infocells {
-            text-align: center;
-            align-items: center;
-            width: 100%;
-            max-width: 360px;
-            border-radius: 16px;
-            border: 1px solid rgba(15, 23, 42, 0.18);
-            padding: 14px 14px 12px;
-            margin: 5px;
-            background: rgba(255, 255, 255, 0.6);
-            box-shadow:
-                0 10px 26px rgba(15, 23, 42, 0.18),
-                0 0 0 1px rgba(148, 163, 184, 0.35);
-        }
-
-        .infocells b {
-            display: inline-block;
-            margin-bottom: 4px;
-        }
-
-        .infocell-image {
-            width: 100%;
-            max-width: 320px;
-            display: block;
-            margin: 10px auto 12px;
-            border-radius: 12px;
-            border: 1px solid rgba(15, 23, 42, 0.18);
-            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
-        }
-
-        a {
-            color: #035aa6;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(3, 90, 166, 0.3);
-            padding-bottom: 1px;
-            transition:
-                color 0.15s ease,
-                border-color 0.15s ease,
-                background-color 0.15s ease;
-        }
-
-        a:hover,
-        a:focus-visible {
-            color: #02325f;
-            border-color: rgba(2, 50, 95, 0.7);
-            background-color: rgba(3, 90, 166, 0.06);
-        }
-
-        .section-title {
-            text-align: center;
-            margin: 0;
-            font-size: 1.35rem;
-            font-weight: 700;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            margin: 0.35rem 0 0;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
-        .footer-card {
-            margin-top: 22px;
-            text-align: center;
-            padding: 18px 20px 16px;
-            border-radius: 16px;
-            background: rgba(255, 255, 255, 0.6);
-            box-shadow:
-                0 10px 24px rgba(15, 23, 42, 0.2),
-                0 0 0 1px rgba(148, 163, 184, 0.4);
-        }
-
-        .footer-card p {
-            margin: 0.4rem 0;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="page-wrapper">
-
-        <!-- PART 1: OVERVIEW (DOCX CONTENT) -->
-        <div class="card">
-            <div id="TCR">
-                <h1><u>SJMTA Technique Competition and Theory Test</u></h1>
-                <h3><span class="highlight">Sunday, January 24, 2027</span></h3>
-
-                <div class="overview">
-                    <p>
-                        As the ultimate goal of piano lessons is to enable students to express their musical understanding through secure technique,
-                        SJMTA holds an annual technique competition aimed at enhancing, developing and mastering piano technique.
-                    </p>
-
-                    <div class="block">
-                        <p><b>Place:</b> Cunningham Piano, Cherry Hill NJ</p>
-                        <p><b>Time:</b> 12pm – 5:30 pm. Exact performance times to be announced.</p>
-                    </div>
-
-                    <div class="block">
-                        <p>
-                            <b>Competition Schedule:</b> Students will be provided with their exact performance time in advance of the competition.
-                            All participants should be on the premises at least 15 minutes prior to start time.
-                            At the conclusion of performances in each category, winners will be announced for that category as soon as the scores are calculated.
-                            Certificates and trophies will be given to teachers at a later date.
-                        </p>
-                    </div>
-
-                    <div class="block">
-                        <p><b>Required Repertoire:</b></p>
-                        <p>
-                            There will be 11 levels of competition, from Elementary through Collegiate.
-                            For each level, there will be one designated scale, one arpeggio, and one required étude, featuring the same technical challenge for all levels.
-                        </p>
-                    </div>
-
-                    <div class="block">
-                        <p><b>Theory test:</b></p>
-                        <p>
-                            SJMTA is supplementing the Technique Competition with an optional theory test based on Keith Snell’s
-                            <i>Fundamentals of Piano Theory</i>. It can be taken while students are waiting to perform.
-                            This year SJMTA is offering preparatory level through level five.
-                            We recommend enrolling students one grade level below the theory level at which they are currently working.
-                        </p>
-                    </div>
-
-                    <div class="block">
-                        <p><b>Volunteers:</b></p>
-                        <p>
-                            Six to eight teachers will be needed to monitor the competition; each will be assigned to a particular room.
-                            Monitors are asked to remain at their assigned doors during the competition.
-                            We will also need two volunteers for the registration desk and 2–3 for each level in the scoring room.
-                            If you cannot volunteer your time, we will require a “duty deposit” of $50 from you to hire extra monitors.
-                        </p>
-                    </div>
-
-                    <div class="block">
-                        <p><b>Deadline:</b> January 8, 2027</p>
-                    </div>
-
-                    <div class="block">
-                        <p><b>Application:</b></p>
-                        <ul>
-                            <li><b>Application fee:</b> $25</li>
-                            <li>No limit to the number of applicants from each studio</li>
-                            <li>Each applicant is limited to <b>ONE</b> level</li>
-                            <li><b>Dress Code:</b> Please dress appropriately (no sports clothes, jeans, sandals or sneakers)</li>
-                        </ul>
-                    </div>
-
-                    <div class="block">
-                        <p>
-                            Please send the competition forms with fees
-                            (one teacher’s check paid to SJMTA for all students) to:
-                        </p>
-                        <p>
-                            <b>Elina Galletta</b><br>
-                            40 Autumn Park Drive<br>
-                            Medford, NJ 08055
-                        </p>
-                        <p>
-                            For any inquiries or questions please email
-                            <a href="mailto:galletta@rowan.edu">Elina Galletta — galletta@rowan.edu</a><br>
-                        </p>
-                    </div>
-                </div>
+            <div class="block">
+              <p><b>Place:</b> Cunningham Piano, Cherry Hill NJ</p>
+              <p><b>Time:</b> 12pm – 5:30 pm. Exact performance times to be announced.</p>
             </div>
-        </div>
 
-        <!-- PART 2 HEADING CARD -->
-        <div class="card">
-            <div class="section-title">Required Repertoire (2027)</div>
-            <div class="section-subtitle">
-                Please note that we have included the IMSLP link for each study for your convenience.
-                <a href="../../assets/documents/2026/SJMTA_Technique_Competition_Repertoire_2027.docx-2.pdf" target="_blank">Download the 2027 competition information, repertoire, and application form.</a>
+            <div class="block">
+              <p>
+                <b>Competition Schedule:</b> Students will be provided with their exact performance
+                time in advance of the competition. All participants should be on the premises at
+                least 15 minutes prior to start time. At the conclusion of performances in each
+                category, winners will be announced for that category as soon as the scores are
+                calculated. Certificates and trophies will be given to teachers at a later date.
+              </p>
             </div>
-        </div>
 
-        <!-- PART 2: REQUIRED REPERTOIRE GRID (HTML) -->
-        <div class="levels-grid-wrapper">
-            <div class="levels-grid">
-
-                <div class="infocells">
-                    <b>Level 1:</b> Age 5 to Age 7<br>
-                    Humbert: Etude in C major, Russian School of Piano Playing, Book I Part I<br>
-                    <a target="_blank" href="https://imslp.org/index.php?search=Humbert+Etude+C+major+Russian+School+of+Piano+Playing&amp;title=Special%3ASearch">Find this etude on IMSLP</a><br><br>
-                    C major scale, hands alone, 2 octaves; tonic-triad arpeggio, hands crossing over.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 2:</b> Age 6 to Age 8<br>
-                    Goedicke: Etude in C major, Russian School of Piano Playing, Book I Part II<br>
-                    <a target="_blank" href="https://imslp.org/index.php?search=Goedicke+Etude+C+major+Russian+School+of+Piano+Playing&amp;title=Special%3ASearch">Find this etude on IMSLP</a><br><br>
-                    C major scale, hands alone, 2 octaves; tonic-triad arpeggio, hands crossing over.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 3:</b> Age 7 to Age 9<br>
-                    Loeschhorn: Etude in C major, Op. 65, Book I, No. 8<br>
-                    <a target="_blank" href="https://imslp.org/wiki/Studies_for_the_Piano%2C_Op.65_%28Loeschhorn%2C_Albert%29">Find this etude on IMSLP</a><br><br>
-                    C major scale and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 4:</b> Age 8 to Age 10<br>
-                    Berens: Etude in A minor, Op. 88 No. 6<br>
-                    <a target="_blank" href="https://imslp.org/wiki/Die_Schule_der_Tonleitern%2C_Akkorde_und_Verzierungen%2C_Op.88_%28Berens%2C_Hermann%29">Find this etude on IMSLP</a><br><br>
-                    A minor harmonic and melodic scales and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 5:</b> Age 9 to Age 11<br>
-                    Heller: Etude in C major, Op. 46 No. 1<br>
-                    <a target="_blank" href="https://imslp.org/wiki/30_Progressive_Studies%2C_Op.46_%28Heller%2C_Stephen%29">Find this etude on IMSLP</a><br><br>
-                    C major scale and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 6:</b> Age 10 to Age 12<br>
-                    Burgmuller: Velocity, Op. 109 No. 10<br>
-                    <a target="_blank" href="https://imslp.org/wiki/15_Etudes_op._109_%28Burgmuller%2C_Johann_Friedrich%29">Find this etude on IMSLP</a><br><br>
-                    C major scale and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 7:</b> Age 11 to Age 13<br>
-                    Czerny: Etude in F major, Op. 299 No. 12<br>
-                    <a target="_blank" href="https://imslp.org/wiki/The_School_of_Velocity_%28Czerny%2C_Carl%29">Find this etude on IMSLP</a><br><br>
-                    F major scale and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 8:</b> Age 12 to Age 15<br>
-                    Cramer: Fifty Studies, No. 8 in C major<br>
-                    <a target="_blank" href="https://imslp.org/wiki/50_Selected_Studies_%28Cramer%2C_Johann_Baptist%29">Find this etude on IMSLP</a><br><br>
-                    C major scale and tonic-triad arpeggio, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 9:</b> Age 13 to Age 16<br>
-                    Mendelssohn: Three Etudes, Op. 104b No. 2 in F major<br>
-                    <a target="_blank" href="https://imslp.org/wiki/Drei_Et%C3%BCden_%28Mendelssohn%2C_Felix%29">Find this etude on IMSLP</a><br><br>
-                    F major scale; tonic-triad, dominant-seventh, and diminished-seventh arpeggios, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 10:</b> Age 14 to Age 17<br>
-                    Moszkowski: Etude in A-flat major, Op. 72 No. 11<br>
-                    <a target="_blank" href="https://imslp.org/wiki/15_Etudes_de_Virtuosit%C3%A9%2C_Op.72_%28Moszkowski%2C_Moritz%29">Find this etude on IMSLP</a><br><br>
-                    A-flat major scale in parallel motion, 3rds, 6ths, and 10ths; major, minor, dominant-seventh, diminished-seventh, and augmented arpeggios, 4 octaves, hands together.
-                </div>
-
-                <div class="infocells">
-                    <b>Level 11:</b> Age 15 to Age 18<br>
-                    Chopin: Etude in G-flat major, Op. 25 No. 9<br>
-                    <a target="_blank" href="https://imslp.org/wiki/Etude_Op_25">Find this etude on IMSLP</a><br><br>
-                    G-flat major scale in parallel motion, 3rds, 6ths, and 10ths; major, minor, dominant-seventh, diminished-seventh, and augmented arpeggios, 4 octaves, hands together.
-                </div>
-
+            <div class="block">
+              <p><b>Required Repertoire:</b></p>
+              <p>
+                There will be 11 levels of competition, from Elementary through Collegiate. For each
+                level, there will be one designated scale, one arpeggio, and one required étude,
+                featuring the same technical challenge for all levels.
+              </p>
             </div>
+
+            <div class="block">
+              <p><b>Theory test:</b></p>
+              <p>
+                SJMTA is supplementing the Technique Competition with an optional theory test based
+                on Keith Snell’s
+                <i>Fundamentals of Piano Theory</i>. It can be taken while students are waiting to
+                perform. This year SJMTA is offering preparatory level through level five. We
+                recommend enrolling students one grade level below the theory level at which they
+                are currently working.
+              </p>
+            </div>
+
+            <div class="block">
+              <p><b>Volunteers:</b></p>
+              <p>
+                Six to eight teachers will be needed to monitor the competition; each will be
+                assigned to a particular room. Monitors are asked to remain at their assigned doors
+                during the competition. We will also need two volunteers for the registration desk
+                and 2–3 for each level in the scoring room. If you cannot volunteer your time, we
+                will require a “duty deposit” of $50 from you to hire extra monitors.
+              </p>
+            </div>
+
+            <div class="block">
+              <p><b>Deadline:</b> January 8, 2027</p>
+            </div>
+
+            <div class="block">
+              <p><b>Application:</b></p>
+              <ul>
+                <li><b>Application fee:</b> $25</li>
+                <li>No limit to the number of applicants from each studio</li>
+                <li>Each applicant is limited to <b>ONE</b> level</li>
+                <li>
+                  <b>Dress Code:</b> Please dress appropriately (no sports clothes, jeans, sandals
+                  or sneakers)
+                </li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <p>
+                Please send the competition forms with fees (one teacher’s check paid to SJMTA for
+                all students) to:
+              </p>
+              <p>
+                <b>Elina Galletta</b><br />
+                40 Autumn Park Drive<br />
+                Medford, NJ 08055
+              </p>
+              <p>
+                For any inquiries or questions please email
+                <a href="mailto:galletta@rowan.edu">Elina Galletta — galletta@rowan.edu</a><br />
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-card">
-            <p>
-                <a href="../../assets/documents/2026/SJMTA_Technique_Competition_Repertoire_2027.docx-2.pdf#page=4" target="_blank">
-                    Click here for Application Form
-                </a>
-            </p>
-
-            <p>
-                For any inquiries or questions please email Elina Galletta at
-                <a href="mailto:galletta@rowan.edu">galletta@rowan.edu</a>
-            </p>
-
-            <p>
-                For any inquiries about the Theory Test, please email Alexander Timofeev at
-                <a href="mailto:timofeev@rowan.edu">timofeev@rowan.edu</a>
-            </p>
-
-            <p>
-                If you have trouble with any of these links, please go directly to
-                <a target="_blank" href="https://imslp.org/">www.imslp.org</a>
-            </p>
+      <div class="card">
+        <div class="section-title">Required Repertoire (2027)</div>
+        <div class="section-subtitle">
+          Please note that we have included the IMSLP link for each study for your convenience.
+          <a
+            href="../../assets/documents/2026/SJMTA_Technique_Competition_Repertoire_2027.docx-2.pdf"
+            target="_blank"
+            >Download the 2027 competition information, repertoire, and application form.</a
+          >
         </div>
+      </div>
 
-    </div>
-</body>
+      <div class="levels-grid-wrapper">
+        <div class="levels-grid">
+          <div class="infocells">
+            <b>Level 1:</b> Age 5 to Age 7<br />
+            Humbert: Etude in C major, Russian School of Piano Playing, Book I Part I<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/index.php?search=Humbert+Etude+C+major+Russian+School+of+Piano+Playing&amp;title=Special%3ASearch"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale, hands alone, 2 octaves; tonic-triad arpeggio, hands crossing over.
+          </div>
+
+          <div class="infocells">
+            <b>Level 2:</b> Age 6 to Age 8<br />
+            Goedicke: Etude in C major, Russian School of Piano Playing, Book I Part II<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/index.php?search=Goedicke+Etude+C+major+Russian+School+of+Piano+Playing&amp;title=Special%3ASearch"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale, hands alone, 2 octaves; tonic-triad arpeggio, hands crossing over.
+          </div>
+
+          <div class="infocells">
+            <b>Level 3:</b> Age 7 to Age 9<br />
+            Loeschhorn: Etude in C major, Op. 65, Book I, No. 8<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/Studies_for_the_Piano%2C_Op.65_%28Loeschhorn%2C_Albert%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 4:</b> Age 8 to Age 10<br />
+            Berens: Etude in A minor, Op. 88 No. 6<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/Die_Schule_der_Tonleitern%2C_Akkorde_und_Verzierungen%2C_Op.88_%28Berens%2C_Hermann%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            A minor harmonic and melodic scales and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 5:</b> Age 9 to Age 11<br />
+            Heller: Etude in C major, Op. 46 No. 1<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/30_Progressive_Studies%2C_Op.46_%28Heller%2C_Stephen%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 6:</b> Age 10 to Age 12<br />
+            Burgmuller: Velocity, Op. 109 No. 10<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/15_Etudes_op._109_%28Burgmuller%2C_Johann_Friedrich%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 7:</b> Age 11 to Age 13<br />
+            Czerny: Etude in F major, Op. 299 No. 12<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/The_School_of_Velocity_%28Czerny%2C_Carl%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            F major scale and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 8:</b> Age 12 to Age 15<br />
+            Cramer: Fifty Studies, No. 8 in C major<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/50_Selected_Studies_%28Cramer%2C_Johann_Baptist%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            C major scale and tonic-triad arpeggio, 4 octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 9:</b> Age 13 to Age 16<br />
+            Mendelssohn: Three Etudes, Op. 104b No. 2 in F major<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/Drei_Et%C3%BCden_%28Mendelssohn%2C_Felix%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            F major scale; tonic-triad, dominant-seventh, and diminished-seventh arpeggios, 4
+            octaves, hands together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 10:</b> Age 14 to Age 17<br />
+            Moszkowski: Etude in A-flat major, Op. 72 No. 11<br />
+            <a
+              target="_blank"
+              href="https://imslp.org/wiki/15_Etudes_de_Virtuosit%C3%A9%2C_Op.72_%28Moszkowski%2C_Moritz%29"
+              >Find this etude on IMSLP</a
+            ><br /><br />
+            A-flat major scale in parallel motion, 3rds, 6ths, and 10ths; major, minor,
+            dominant-seventh, diminished-seventh, and augmented arpeggios, 4 octaves, hands
+            together.
+          </div>
+
+          <div class="infocells">
+            <b>Level 11:</b> Age 15 to Age 18<br />
+            Chopin: Etude in G-flat major, Op. 25 No. 9<br />
+            <a target="_blank" href="https://imslp.org/wiki/Etude_Op_25">Find this etude on IMSLP</a
+            ><br /><br />
+            G-flat major scale in parallel motion, 3rds, 6ths, and 10ths; major, minor,
+            dominant-seventh, diminished-seventh, and augmented arpeggios, 4 octaves, hands
+            together.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-card">
+        <p>
+          <a
+            href="../../assets/documents/2026/SJMTA_Technique_Competition_Repertoire_2027.docx-2.pdf#page=4"
+            target="_blank"
+          >
+            Click here for Application Form
+          </a>
+        </p>
+
+        <p>
+          For any inquiries or questions please email Elina Galletta at
+          <a href="mailto:galletta@rowan.edu">galletta@rowan.edu</a>
+        </p>
+
+        <p>
+          For any inquiries about the Theory Test, please email Alexander Timofeev at
+          <a href="mailto:timofeev@rowan.edu">timofeev@rowan.edu</a>
+        </p>
+
+        <p>
+          If you have trouble with any of these links, please go directly to
+          <a target="_blank" href="https://imslp.org/">www.imslp.org</a>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

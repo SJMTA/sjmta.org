@@ -1,200 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About SJMTA</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About SJMTA</title>
 
-  <!-- Preload background image for smoother loading -->
-  <link rel="preload" as="image" href="../../assets/forest-misty-green.png" />
+    <link rel="preload" as="image" href="../../assets/forest-misty-green.png" />
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <link rel="stylesheet" href="../styles/pages/about.css" />
+  </head>
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      font-size: 18px;
-      line-height: 1.75;
+  <body>
+    <main id="aboutUsContent">
+      <h1><u>About Us</u></h1>
 
-      /* 🌿 Bright green forest background */
-      background:
-        linear-gradient(
-          rgba(60, 90, 60, 0.45),
-          rgba(40, 70, 40, 0.5)
-        ),
-        url("../../assets/forest-misty-green.png");
+      <h2><span class="section-heading">History of SJMTA</span></h2>
+      <p>
+        The South Jersey Music Teachers' Association was founded by Aurelia Bender and Marjorie
+        Richie in 1967. Gladys Story was elected as our first President, Trudi Reim as
+        vice-president, and Sylvia Denbo as our first treasurer. In our first season, eight meetings
+        were held, all but one at the Haddonfield Conservatory of Music. Guest speakers for the
+        first season included Sylvia Rabinof of the Brevard Music Center, Natalie Hinderas of Temple
+        University, and John Sears of Wanamaker's Music Department, who gave a lecture-recital using
+        a harpsichord supplied by Wanamaker's.
+      </p>
 
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
+      <p>By the end of the 1967-68 year, SJMTA boasted 23 members.</p>
 
-      display: flex;
-      justify-content: center;
-      padding: 2.5rem 1.5rem;
-    }
+      <p>
+        SJMTA held its first Student Recital in March 1971; 22 students performed at the Haddonfield
+        Conservatory. The first Teachers' Recital was held in March 1975, with eight teachers
+        performing.
+      </p>
 
-    #aboutUsContent {
-      width: 100%;
-      max-width: 1000px;
+      <p>
+        Over the years, the SJMTA Calendar of Events has grown. Thanks to a generous bequest from
+        Sylvia Denbo, one of our original members, we have been able to offer a piano Scholarship in
+        her name annually since our 1996-97 season. Over the years, we have added a Fall Festival,
+        Master Class, Technique Competition/Theory Test, and Student Musicale to our program.
+      </p>
 
-      background: rgba(255, 255, 255, 0.40);
-      backdrop-filter: blur(12px) saturate(150%);
-      -webkit-backdrop-filter: blur(12px) saturate(150%);
+      <p>In 2005, SJMTA became an affiliate of MTNA, the Music Teachers National Association.</p>
 
-      border-radius: 18px;
-      padding: 2.5rem 2rem 2.75rem;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+      <h2><span class="section-heading">Who We Are</span></h2>
+      <p>
+        SJMTA currently consists of approximately 60 members, professional instructors of piano,
+        organ, and voice. Our bylaws provide for both active and retired members.
+      </p>
 
-      color: #1a1a1a;
-    }
+      <p>
+        Thanks to our affiliation with the Music Teachers National Association, our members can take
+        advantage of a nationwide network of resources for music professionals, including
+        performance and competition opportunties for students, a variety of professional
+        publications, group life, health, and liability insurance, and annual national conferences
+        featuring educational sessions, master classes, and concerts.
+      </p>
 
-    h1 {
-      text-align: center;
-      color: #0f2f0f;
-      font-size: 2.2rem;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      letter-spacing: .04em;
-    }
+      <p>
+        Because of our affiliation with MTNA, all SJMTA members also belong to MTNA, as well as to
+        the New Jersey Music Teachers Association (NJMTA). To find out more about MTNA membership,
+        please visit the Music Teachers National Association website,
+        <a href="http://www.mtna.org" target="_blank">http://www.mtna.org</a>.
+      </p>
 
-    h2 {
-      margin-top: 2rem;
-      color: #215b21;
-      margin-bottom: 0.75rem;
-      font-size: 1.45rem;
-    }
+      <h2><span class="section-heading">Board of Directors:</span></h2>
+      <p>
+        <b>President:</b> Elvira Kipnis
+        <a href="mailto:epianist@comcast.net">epianist@comcast.net</a><br /><br />
 
-    span, p {
-      display: block;
-      margin-bottom: 1.2rem;
-      color: #1a1a1a;
-    }
+        <b>Immediate Past President:</b> Andre Vermuelen<br /><br />
 
-    a {
-      color: #0b3d91;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: 0.15s ease;
-    }
+        <b>Treasurer:</b> Joseph Krupa
+        <a href="mailto:Joseph.Krupa@comcast.net">Joseph.Krupa@comcast.net</a><br /><br />
 
-    a:hover {
-      color: #082d6f;
-      border-bottom-color: #082d6f;
-    }
+        <b>Recording Secretary:</b> Marcia Yurko
+        <a href="mailto:mjyurko@hotmail.com">mjyurko@hotmail.com</a><br /><br />
 
-    ul {
-      margin-left: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
+        <b>Vice President:</b> Marcia Yurko<br /><br />
 
-    @media (max-width: 640px) {
-      body {
-        padding: 1.75rem 1rem;
-      }
-      #aboutUsContent {
-        padding: 1.9rem 1.25rem 2.25rem;
-      }
+        <b>Scholarship Treasurer:</b> Dr. Alexander Timofeev
+      </p>
 
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
-</head>
+      <h2><span class="section-heading">Chairs and Committees:</span></h2>
+      <p>
+        <b>Website Coordinators:</b> Elvira Kipnis and Marcia Yurko<br /><br />
+        <b>Website administrator:</b> Joseph Mathew
+        <a href="mailto:lojosephmathew@gmail.com">lojosephmathew@gmail.com</a>
+      </p>
 
-<body>
+      <h2><span class="section-heading">Student Activities:</span></h2>
+      <p>
+        <b>Piano Judging Coordinator:</b> Elvira Kipnis and Marcia Yurko<br /><br />
+        <b>Facilities/ Venues Coordinator:</b> Elvira Kipnis and Marcia Yurko<br /><br />
+        <b>Awards Coordinator:</b> Elvira Kipnis, Joe Krupa and Marcia Yurko<br /><br />
+        <b>Fall Piano Festival Chairperson:</b> Marcia Yurko<br /><br />
+        <b>Advanced Master Class Chairperson:</b> Olga Yelkina
+        <a href="mailto:oyelkina@yahoo.com">oyelkina@yahoo.com</a><br /><br />
+        <b>Spring Juried Piano Auditions:</b> Elvira Kipnis and Marcia Yurko<br /><br />
+        <b>Spring Juried Piano Recitals Chairperson:</b> Elvira Kipnis<br /><br />
+        <b>Technique Competition Chairperson:</b> Elina Galletta
+        <a href="mailto:galletta@rowan.edu">galletta@rowan.edu</a><br /><br />
+        <b>Musicale (Themed Recitals) Chairperson:</b> Joseph Krupa<br /><br />
+        <b>Sylvia Denbo Memorial Scholarship Chairperson:</b> Ariane Alexander
+      </p>
 
-<div id="aboutUsContent">
-  <h1><u>About Us</u></h1>
-
-  <h2><span style="color: maroon;">History of SJMTA</span></h2>
-  <p>
-    The South Jersey Music Teachers' Association was founded by Aurelia Bender and Marjorie Richie in 1967. Gladys Story was elected as our first President, Trudi Reim as vice-president, and Sylvia Denbo as our first treasurer. In our first season, eight meetings were held, all but one at the Haddonfield Conservatory of Music. Guest speakers for the first season included Sylvia Rabinof of the Brevard Music Center, Natalie Hinderas of Temple University, and John Sears of Wanamaker's Music Department, who gave a lecture-recital using a harpsichord supplied by Wanamaker's.
-  </p>
-
-  <p>
-    By the end of the 1967-68 year, SJMTA boasted 23 members.
-  </p>
-
-  <p>
-    SJMTA held its first Student Recital in March 1971; 22 students performed at the Haddonfield Conservatory. The first Teachers' Recital was held in March 1975, with eight teachers performing.
-  </p>
-
-  <p>
-    Over the years, the SJMTA Calendar of Events has grown. Thanks to a generous bequest from Sylvia Denbo, one of our original members, we have been able to offer a piano Scholarship in her name annually since our 1996-97 season. Over the years, we have added a Fall Festival, Master Class, Technique Competition/Theory Test, and Student Musicale to our program.
-  </p>
-
-  <p>
-    In 2005, SJMTA became an affiliate of MTNA, the Music Teachers National Association.
-  </p>
-
-  <h2><span style="color: maroon;">Who We Are</span></h2>
-  <p>
-    SJMTA currently consists of approximately 60 members, professional instructors of piano, organ, and voice. Our bylaws provide for both active and retired members.
-  </p>
-
-  <p>
-    Thanks to our affiliation with the Music Teachers National Association, our members can take advantage of a nationwide network of resources for music professionals, including performance and competition opportunties for students, a variety of professional publications, group life, health, and liability insurance, and annual national conferences featuring educational sessions, master classes, and concerts.
-  </p>
-
-  <p>
-    Because of our affiliation with MTNA, all SJMTA members also belong to MTNA, as well as to the New Jersey Music Teachers Association (NJMTA). To find out more about MTNA membership, please visit the Music Teachers National Association website,
-    <a href="http://www.mtna.org" target="_blank">http://www.mtna.org</a>.
-  </p>
-
-  <h2><span style="color: maroon;">Board of Directors:</span></h2>
-  <p>
-    <b>President:</b> Elvira Kipnis
-    <a href="mailto:epianist@comcast.net">epianist@comcast.net</a><br><br>
-
-    <b>Immediate Past President:</b> Andre Vermuelen<br><br>
-
-    <b>Treasurer:</b> Joseph Krupa
-    <a href="mailto:Joseph.Krupa@comcast.net">Joseph.Krupa@comcast.net</a><br><br>
-
-    <b>Recording Secretary:</b> Marcia Yurko
-    <a href="mailto:mjyurko@hotmail.com">mjyurko@hotmail.com</a><br><br>
-
-    <b>Vice President:</b> Marcia Yurko<br><br>
-
-    <b>Scholarship Treasurer:</b> Dr. Alexander Timofeev
-  </p>
-
-  <h2><span style="color: maroon;">Chairs and Committees:</span></h2>
-  <p>
-    <b>Website Coordinators:</b> Elvira Kipnis and Marcia Yurko<br><br>
-    <b>Website administrator:</b> Joseph Mathew
-    <a href="mailto:lojosephmathew@gmail.com">lojosephmathew@gmail.com</a>
-  </p>
-
-  <h2><span style="color: maroon;">Student Activities:</span></h2>
-  <p>
-    <b>Piano Judging Coordinator:</b> Elvira Kipnis and Marcia Yurko<br><br>
-    <b>Facilities/ Venues Coordinator:</b> Elvira Kipnis and Marcia Yurko<br><br>
-    <b>Awards Coordinator:</b> Elvira Kipnis, Joe Krupa, Marcia Yurko and Veda Zuponcic<br><br>
-    <b>Fall Piano Festival Chairperson:</b> Marcia Yurko<br><br>
-    <b>Advanced Master Class Chairperson:</b> Olga Yelkina
-    <a href="mailto:oyelkina@yahoo.com">oyelkina@yahoo.com</a><br><br>
-    <b>Spring Juried Piano Auditions:</b> Elvira Kipnis and Marcia Yurko<br><br>
-    <b>Spring Juried Piano Recitals Chairperson:</b> Elvira Kipnis<br><br>
-    <b>Technique Competition Chairperson:</b> Veda Zuponcic
-    <a href="mailto:Zuponcic@yahoo.com">Zuponcic@yahoo.com</a><br><br>
-    <b>Musicale (Themed Recitals) Chairperson:</b> Joseph Krupa
-  </p>
-
-  <h2><span style="color: maroon;">Attn. Students and Parents:</span></h2>
-  <p>
-    If you are looking for a teacher, you can contact any board members for referrals. If you already have a teacher, please address all the questions to your teacher. Kindly contact a Chairperson only through your teachers.
-  </p>
-
-</div>
-
-</body>
+      <h2><span class="section-heading">Attn. Students and Parents:</span></h2>
+      <p>
+        If you are looking for a teacher, you can contact any board members for referrals. If you
+        already have a teacher, please address all the questions to your teacher. Kindly contact a
+        Chairperson only through your teachers.
+      </p>
+    </main>
+  </body>
 </html>
