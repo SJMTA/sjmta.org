@@ -123,12 +123,20 @@ h3 {
   margin: 0 0 1rem;
 }
 
+.artist-bio h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  color: #5a4520;
+}
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
 
   .artist-photo {
+    flex-basis: auto;
+    width: 260px;
     max-width: 100%;
   }
 }
